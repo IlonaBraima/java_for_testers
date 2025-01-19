@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/Geometry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/squareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/squareTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +178,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737139485174</updated>
       <workItem from="1737139486647" duration="3388000" />
-      <workItem from="1737189600124" duration="16640000" />
+      <workItem from="1737189600124" duration="22084000" />
     </task>
     <servers />
   </component>
