@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/Hello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/Geometry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Square.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/squareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/squareTest.java" afterDir="false" />
     </list>
@@ -77,9 +80,10 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/anoli/java_for_testers/sandbox/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -89,8 +93,8 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.squareTest.canCalculatePerimeter">
-    <configuration name="Geometry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Geometry">
+    <configuration name="Geometry" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stga.geometry.Geometry" />
       <module name="sandbox.main" />
       <method v="2">
@@ -156,7 +160,6 @@
       <list>
         <item itemvalue="Gradle.squareTest.canCalculatePerimeter" />
         <item itemvalue="Gradle.squareTest.canCalculateArea" />
-        <item itemvalue="Application.Geometry" />
         <item itemvalue="Application.Hello" />
       </list>
     </recent_temporary>
@@ -178,7 +181,8 @@
       <option name="presentableId" value="Default" />
       <updated>1737139485174</updated>
       <workItem from="1737139486647" duration="3388000" />
-      <workItem from="1737189600124" duration="22084000" />
+      <workItem from="1737189600124" duration="23522000" />
+      <workItem from="1737307427665" duration="11350000" />
     </task>
     <servers />
   </component>
@@ -195,5 +199,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
