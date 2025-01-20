@@ -15,13 +15,16 @@ public record Triangle(
         System.out.println(text);
     }
 
-    private static double triangleArea(double length1, double length2, double length3) {
+    public static double triangleArea(double length1, double length2, double length3) {
         // Полупериметр
-        double sPerimeter = (length1 + length2 + length3) / 2;
+        double sPerimeter = (length1 + length2 + length3) / 2.0;
         // Площадь по формуле Герона
-        return Math.sqrt(sPerimeter *
-                (sPerimeter - length1) *
-                (sPerimeter - length2) *
-                (sPerimeter - length3));
+        return Math.sqrt(sPerimeter * (sPerimeter - length1) * (sPerimeter - length2) * (sPerimeter - length3));
     }
+
+
+    public static double perimeter(double length1, double length2, double length3) {
+        return (length1 + length2 + length3) / 2.0;
+    }
+
 }
