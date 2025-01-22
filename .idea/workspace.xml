@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +23,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/sandbox">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -93,7 +98,7 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TriangleTest.canCalculateSemiPerimeter2">
+  <component name="RunManager" selected="Gradle.TriangleTest.canCalculateArea">
     <configuration name="Geometry" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stga.geometry.Geometry" />
       <module name="sandbox.main" />
@@ -101,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TriangleTest.canCalculateAreaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TriangleTest.canCalculateArea" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
@@ -114,7 +119,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.geometry.figures.TriangleTest.canCalculateAreaTest&quot;" />
+            <option value="&quot;ru.stqa.geometry.figures.TriangleTest.canCalculateArea&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -139,6 +144,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ru.stqa.geometry.figures.TriangleTest.canCalculateAreaTest2&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TriangleTest.canCalculatePerimeter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.geometry.figures.TriangleTest.canCalculatePerimeter&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -197,37 +226,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="squareTest.canCalculatePerimeter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.geometry.figures.squareTest.canCalculatePerimeter&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TriangleTest.canCalculateArea" />
+        <item itemvalue="Gradle.TriangleTest.canCalculatePerimeter" />
         <item itemvalue="Gradle.TriangleTest.canCalculateSemiPerimeter2" />
         <item itemvalue="Gradle.TriangleTest.canCalculateAreaTest2" />
         <item itemvalue="Gradle.TriangleTest.canCalculateSemiPerimeter" />
-        <item itemvalue="Gradle.TriangleTest.canCalculateAreaTest" />
-        <item itemvalue="Gradle.squareTest.canCalculatePerimeter" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +255,7 @@
       <workItem from="1737139486647" duration="3388000" />
       <workItem from="1737189600124" duration="23522000" />
       <workItem from="1737307427665" duration="12133000" />
-      <workItem from="1737393722970" duration="5367000" />
+      <workItem from="1737393722970" duration="23703000" />
     </task>
     <servers />
   </component>
