@@ -14,8 +14,8 @@ public class Geometry {
         Rectangle.printRectangleArea(3., 5.);
         Rectangle.printRectangleArea(7., 9.);
 
-        Triangle.printTriangleArea(3., 4., 5.);
-        Triangle.printTriangleArea(5., 6., 7.);
+        Triangle.printTriangleArea(new Triangle(3., 4., 5.));
+        Triangle.printTriangleArea(new Triangle(5., 6., 7.));
 
 }
 
