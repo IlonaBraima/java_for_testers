@@ -22,8 +22,7 @@ public class Triangle {
         return Math.sqrt(((this.length1 + this.length2 + this.length3) / 2.) * (((this.length1 + this.length2 + this.length3) / 2.) - this.length1) * (((this.length1 + this.length2 + this.length3) / 2.) - this.length2) * (((this.length1 + this.length2 + this.length3) / 2.) - this.length3));
     }
 
-    public double semiPerimeter() {
-        return ((this.length1 + this.length2 + this.length3) / 2.);
+    public double semiPerimeter() {return ((this.length1 + this.length2 + this.length3) / 2.);
     }
 }
 
