@@ -6,6 +6,13 @@ import ru.stga.geometry.figures.Triangle;
 public class TriangleTest {
 
     @Test
+    void validTriangleSatisfiesInequality() {
+        Assertions.assertDoesNotThrow(() -> {
+            new Triangle(3.0, 4.0, 5.0); // 3 + 4 > 5, 4 + 5 > 3, 3 + 5 > 4
+        });
+    }
+
+    @Test
     void cannotCreateTriangleWithNegativeSide() {
         try {
             new Triangle(-3., -4., -5.);
@@ -14,6 +21,7 @@ public class TriangleTest {
             //OK
         }
     }
+
     @Test
     void canCalculateArea() {
         var t = new Triangle(3., 4., 5.);

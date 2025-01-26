@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stga/geometry/figures/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stga/geometry/figures/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stga/geometry/figures/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stga/geometry/figures/Triangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/geometry/figures/RectangleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/geometry/figures/RectangleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/geometry/figures/TriangleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/geometry/figures/TriangleTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/RectangleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +80,8 @@
     "Gradle.squareTest.canCalculatePerimeter.executor": "Run",
     "JUnit.RectangleTest.cannotCreateRectangleWithNegativeSide.executor": "Run",
     "JUnit.TriangleTest.cannotCreateTriangleWithNegativeSide.executor": "Run",
+    "JUnit.TriangleTest.throwsExceptionForTriangleInequalityViolation.executor": "Run",
+    "JUnit.TriangleTest.validTriangleSatisfiesInequality.executor": "Run",
     "JUnit.mathTests.testDivideByZero.executor": "Run",
     "JUnit.squareTest.canCalculateArea.executor": "Run",
     "JUnit.squareTest.cannotCreateSquareWithNegativeSide.executor": "Run",
@@ -106,14 +110,7 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TriangleTest.cannotCreateTriangleWithNegativeSide">
-    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Hello" />
-      <module name="sandbox.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TriangleTest.validTriangleSatisfiesInequality">
     <configuration name="RectangleTest.cannotCreateRectangleWithNegativeSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
       <extension name="coverage">
@@ -146,7 +143,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="squareTest.canCalculateArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TriangleTest.throwsExceptionForTriangleInequalityViolation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
       <extension name="coverage">
         <pattern>
@@ -155,8 +152,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.squareTest" />
-      <option name="METHOD_NAME" value="canCalculateArea" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTest" />
+      <option name="METHOD_NAME" value="throwsExceptionForTriangleInequalityViolation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTest.validTriangleSatisfiesInequality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTest" />
+      <option name="METHOD_NAME" value="validTriangleSatisfiesInequality" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,19 +192,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Hello" />
       <item itemvalue="JUnit.RectangleTest.cannotCreateRectangleWithNegativeSide" />
       <item itemvalue="JUnit.TriangleTest.cannotCreateTriangleWithNegativeSide" />
-      <item itemvalue="JUnit.squareTest.canCalculateArea" />
+      <item itemvalue="JUnit.TriangleTest.throwsExceptionForTriangleInequalityViolation" />
+      <item itemvalue="JUnit.TriangleTest.validTriangleSatisfiesInequality" />
       <item itemvalue="JUnit.squareTest.cannotCreateSquareWithNegativeSide" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TriangleTest.validTriangleSatisfiesInequality" />
+        <item itemvalue="JUnit.TriangleTest.throwsExceptionForTriangleInequalityViolation" />
         <item itemvalue="JUnit.TriangleTest.cannotCreateTriangleWithNegativeSide" />
         <item itemvalue="JUnit.RectangleTest.cannotCreateRectangleWithNegativeSide" />
         <item itemvalue="JUnit.squareTest.cannotCreateSquareWithNegativeSide" />
-        <item itemvalue="JUnit.squareTest.canCalculateArea" />
-        <item itemvalue="Application.Hello" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +229,7 @@
       <workItem from="1737307427665" duration="12133000" />
       <workItem from="1737393722970" duration="35354000" />
       <workItem from="1737818345995" duration="5614000" />
-      <workItem from="1737881888935" duration="7103000" />
+      <workItem from="1737881888935" duration="9943000" />
     </task>
     <servers />
   </component>

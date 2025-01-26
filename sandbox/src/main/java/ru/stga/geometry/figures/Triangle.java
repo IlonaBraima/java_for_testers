@@ -4,8 +4,11 @@ package ru.stga.geometry.figures;
 public record Triangle (double length1, double length2, double length3) {
 
     public Triangle{
-        if (length1 < 0 || length2 < 0 || length3 < 0) {
+        if (length1 <= 0 || length2 <= 0 || length3 <= 0) {
             throw new IllegalArgumentException("Triangle side should be negative");
+        }
+        if (length1 + length2 <= length3 || length1 + length3 <= length2 || length2 + length3 <= length1) {
+            throw new IllegalArgumentException("Triangle sides violate the triangle inequality");
         }
     }
 
