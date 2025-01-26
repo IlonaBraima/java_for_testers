@@ -6,6 +6,15 @@ import ru.stga.geometry.figures.Triangle;
 public class TriangleTest {
 
     @Test
+    void cannotCreateTriangleWithNegativeSide() {
+        try {
+            new Triangle(-3., -4., -5.);
+            Assertions.fail();
+        } catch (IllegalArgumentException exception) {
+            //OK
+        }
+    }
+    @Test
     void canCalculateArea() {
         var t = new Triangle(3., 4., 5.);
         double result = t.area();

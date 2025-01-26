@@ -1,9 +1,6 @@
 package ru.stga.geometry.figures;
 
-public record Rectangle (
-        double a,
-        double b
-) {
+public record Rectangle (double a, double b) {
 
     public Rectangle{
         if (a < 0 || b < 0) {
