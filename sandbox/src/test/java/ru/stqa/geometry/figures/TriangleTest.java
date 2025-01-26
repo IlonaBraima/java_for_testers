@@ -6,6 +6,21 @@ import ru.stga.geometry.figures.Triangle;
 public class TriangleTest {
 
     @Test
+    void testEquality() {
+        var t1 = new Triangle(3., 4., 5.);
+        var t2 = new Triangle(3., 4., 5.);
+        Assertions.assertEquals(t1, t2); // треугольники равны
+    }
+
+    @Test
+    void testEquality2() {
+        var t1 = new Triangle(5., 6., 7.);
+        var t2 = new Triangle(6., 7., 5.);
+        Assertions.assertEquals(t1, t2); // Порядок сторон отличается, но треугольники равны
+    }
+
+
+    @Test
     void validTriangleSatisfiesInequality() {
         Assertions.assertDoesNotThrow(() -> {
             new Triangle(3.0, 4.0, 5.0); // 3 + 4 > 5, 4 + 5 > 3, 3 + 5 > 4
