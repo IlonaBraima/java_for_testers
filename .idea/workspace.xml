@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/Hello.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Hello.executor": "Run",
+    "Application.Hello.executor": "Debug",
     "Gradle.TriangleTest.canCalculateArea.executor": "Run",
     "Gradle.TriangleTest.canCalculateAreaTest.executor": "Run",
     "Gradle.TriangleTest.canCalculateAreaTest2.executor": "Run",
@@ -98,7 +99,7 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.mathTests.testDivideByZero">
+  <component name="RunManager" selected="Application.Hello">
     <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hello" />
       <module name="sandbox.main" />
@@ -203,8 +204,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.mathTests.testDivideByZero" />
         <item itemvalue="Application.Hello" />
+        <item itemvalue="JUnit.mathTests.testDivideByZero" />
         <item itemvalue="Gradle.TriangleTest.canCalculateArea" />
         <item itemvalue="Gradle.TriangleTest.canCalculatePerimeter" />
         <item itemvalue="Gradle.TriangleTest.canCalculateSemiPerimeter2" />
@@ -231,7 +232,7 @@
       <workItem from="1737189600124" duration="23522000" />
       <workItem from="1737307427665" duration="12133000" />
       <workItem from="1737393722970" duration="35354000" />
-      <workItem from="1737818345995" duration="3019000" />
+      <workItem from="1737818345995" duration="3646000" />
     </task>
     <servers />
   </component>
