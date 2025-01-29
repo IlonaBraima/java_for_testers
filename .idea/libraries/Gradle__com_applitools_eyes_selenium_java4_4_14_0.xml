@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.applitools:eyes-selenium-java4:4.14.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.applitools" artifactId="eyes-selenium-java4" version="4.14.0" baseVersion="4.14.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.applitools/eyes-selenium-java4/4.14.0/4d36ef96c807bcd3ffec908e8eafae42ceae8a08/eyes-selenium-java4-4.14.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

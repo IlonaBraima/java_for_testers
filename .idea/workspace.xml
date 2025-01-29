@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stga/geometry/figures/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/production/classes/ru/stga/geometry/figures/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/geometry/figures/TriangleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/out/test/classes/ru/stqa/geometry/figures/TriangleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/addressbook_web_tests">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/sandbox">
       <ProjectState />
     </projectState>
@@ -65,6 +71,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Hello.executor": "Run",
+    "Gradle.GroupCreationTest.groupcreate.executor": "Run",
+    "Gradle.GroupCreationTest.test.executor": "Run",
     "Gradle.TriangleTest.canCalculateArea.executor": "Run",
     "Gradle.TriangleTest.canCalculateAreaTest.executor": "Run",
     "Gradle.TriangleTest.canCalculateAreaTest2.executor": "Run",
@@ -101,8 +109,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/anoli/java_for_testers/sandbox/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "SDKs",
+    "onboarding.tips.debug.path": "C:/Users/anoli/java_for_testers/addressbook_web_tests/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
@@ -116,7 +124,55 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TriangleTest.testEquality">
+  <component name="RunManager" selected="Gradle.GroupCreationTest.groupcreate">
+    <configuration name="GroupCreationTest.groupcreate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;GroupCreationTest.groupcreate&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GroupCreationTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;GroupCreationTest.test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="RectangleTest.testEquality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
       <extension name="coverage">
@@ -128,22 +184,6 @@
       <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.RectangleTest" />
       <option name="METHOD_NAME" value="testEquality" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RectangleTest.testEquality2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.RectangleTest" />
-      <option name="METHOD_NAME" value="testEquality2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,36 +221,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="squareTest.testPassed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.squareTest" />
-      <option name="METHOD_NAME" value="testPassed" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Gradle.GroupCreationTest.groupcreate" />
+      <item itemvalue="Gradle.GroupCreationTest.test" />
       <item itemvalue="JUnit.RectangleTest.testEquality" />
-      <item itemvalue="JUnit.RectangleTest.testEquality2" />
       <item itemvalue="JUnit.TriangleTest.testEquality" />
       <item itemvalue="JUnit.TriangleTest.testEquality2" />
-      <item itemvalue="JUnit.squareTest.testPassed" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroupCreationTest.groupcreate" />
+        <item itemvalue="Gradle.GroupCreationTest.test" />
         <item itemvalue="JUnit.TriangleTest.testEquality" />
         <item itemvalue="JUnit.TriangleTest.testEquality2" />
         <item itemvalue="JUnit.RectangleTest.testEquality" />
-        <item itemvalue="JUnit.RectangleTest.testEquality2" />
-        <item itemvalue="JUnit.squareTest.testPassed" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +259,7 @@
       <workItem from="1737307427665" duration="12133000" />
       <workItem from="1737393722970" duration="35354000" />
       <workItem from="1737818345995" duration="5614000" />
-      <workItem from="1737881888935" duration="18378000" />
+      <workItem from="1737881888935" duration="26708000" />
     </task>
     <servers />
   </component>
@@ -254,6 +278,11 @@
           <url>file://$PROJECT_DIR$/sandbox/src/main/java/Hello.java</url>
           <line>3</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook_web_tests/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

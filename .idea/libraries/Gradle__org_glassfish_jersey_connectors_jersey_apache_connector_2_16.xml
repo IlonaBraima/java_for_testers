@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.glassfish.jersey.connectors:jersey-apache-connector:2.16" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.glassfish.jersey.connectors" artifactId="jersey-apache-connector" version="2.16" baseVersion="2.16" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.connectors/jersey-apache-connector/2.16/6b3adcaf422e3d001f764ccb20b1c9fa9842ee1a/jersey-apache-connector-2.16.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
