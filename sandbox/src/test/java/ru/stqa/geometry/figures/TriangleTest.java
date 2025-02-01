@@ -19,7 +19,6 @@ public class TriangleTest {
         Assertions.assertEquals(t1, t2); // Порядок сторон отличается, но треугольники равны
     }
 
-
     @Test
     void validTriangleSatisfiesInequality() {
         Assertions.assertDoesNotThrow(() -> {
