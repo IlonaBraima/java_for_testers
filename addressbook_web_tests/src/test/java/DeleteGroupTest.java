@@ -1,3 +1,4 @@
+import model.GroupData;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
@@ -7,7 +8,7 @@ public class DeleteGroupTest extends TestBase {
     public void deleteGroup() {
         openGroupPage();
         if (!isGroupPresent()) {
-            createGroup("group name", "group header", "group footer");
+            createGroup(new GroupData("group name", "group header", "group footer"));
         }
         removeGroup();
     }

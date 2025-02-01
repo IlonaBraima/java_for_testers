@@ -71,6 +71,8 @@
   "keyToString": {
     "Application.Hello.executor": "Run",
     "Gradle.DeleteGroupTest.deleteGroup.executor": "Run",
+    "Gradle.DeleteGroupTest.executor": "Run",
+    "Gradle.GroupCreationTest.CanCreateGroupWithNameOnly.executor": "Debug",
     "Gradle.GroupCreationTest.executor": "Run",
     "Gradle.GroupCreationTest.groupcreate.executor": "Run",
     "Gradle.GroupCreationTest.test.executor": "Run",
@@ -106,6 +108,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/anoli/java_for_testers",
     "node.js.detected.package.eslint": "true",
@@ -128,7 +131,31 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GroupCreationTest">
+  <component name="RunManager" selected="Gradle.GroupCreationTest.CanCreateGroupWithNameOnly">
+    <configuration name="DeleteGroupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;DeleteGroupTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="DeleteGroupTest.deleteGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -177,6 +204,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="GroupCreationTest.CanCreateGroupWithNameOnly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;GroupCreationTest.CanCreateGroupWithNameOnly&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="GroupCreationTest.groupcreate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -201,64 +252,20 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="addressbook_web_tests [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="addressbook_web_tests [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Gradle.GroupCreationTest.CanCreateGroupWithNameOnly" />
+      <item itemvalue="Gradle.DeleteGroupTest" />
       <item itemvalue="Gradle.DeleteGroupTest.deleteGroup" />
       <item itemvalue="Gradle.GroupCreationTest" />
       <item itemvalue="Gradle.GroupCreationTest.groupcreate" />
-      <item itemvalue="Gradle.addressbook_web_tests [dependencies]" />
-      <item itemvalue="Gradle.addressbook_web_tests [test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroupCreationTest.CanCreateGroupWithNameOnly" />
         <item itemvalue="Gradle.GroupCreationTest" />
+        <item itemvalue="Gradle.DeleteGroupTest" />
         <item itemvalue="Gradle.DeleteGroupTest.deleteGroup" />
         <item itemvalue="Gradle.GroupCreationTest.groupcreate" />
-        <item itemvalue="Gradle.addressbook_web_tests [dependencies]" />
-        <item itemvalue="Gradle.addressbook_web_tests [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +290,9 @@
       <workItem from="1737307427665" duration="12133000" />
       <workItem from="1737393722970" duration="35354000" />
       <workItem from="1737818345995" duration="5614000" />
-      <workItem from="1737881888935" duration="46671000" />
+      <workItem from="1737881888935" duration="49530000" />
+      <workItem from="1738422365854" duration="975000" />
+      <workItem from="1738423433364" duration="4145000" />
     </task>
     <servers />
   </component>
@@ -307,6 +316,11 @@
           <url>file://$PROJECT_DIR$/addressbook_web_tests/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook_web_tests/src/test/java/GroupCreationTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
