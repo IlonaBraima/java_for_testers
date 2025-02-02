@@ -4,8 +4,8 @@ public class CreateUserTest extends TestBase {
 
   @Test
   public void CanCreateUser() {
-    openAddNewUserPage();
-    createUser();
+    app.openAddNewUserPage();
+    app.createUser();
   }
 
 }
