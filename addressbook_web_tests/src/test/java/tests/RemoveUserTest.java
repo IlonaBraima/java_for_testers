@@ -1,20 +1,19 @@
-import manager.ApplicationManager;
+package tests;
+
 import org.junit.jupiter.api.Test;
 
-public class RemoveUserTest extends TestBase{
+public class RemoveUserTest extends TestBase {
 
-  @Test
-  public void CanRemoveUser() {
-    app.openHomePage();
-    if (!app.isUserListPresent()) {
-      app.createUser();
-    }
-    app.openHomePage();
-    app.removeUser();
+    @Test
+    public void CanRemoveUser() {
+        if (!app.users().isUserListPresent()) {
+            app.users().createUser();
+        }
+        app.users().removeUser();
 
-    if (app.isAlertPresent()) {
-      ApplicationManager.driver.switchTo().alert().accept();
+//        if (app.users().isAlertPresent()) {
+//            app.users().driver.switchTo().alert().accept();
+//        }
     }
-  }
 }
 

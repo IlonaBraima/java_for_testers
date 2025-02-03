@@ -1,23 +1,16 @@
-import manager.ApplicationManager;
+package tests;
 import model.GroupData;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 
 public class DeleteGroupTest extends TestBase {
 
     @Test
     public void deleteGroup() {
-        app.openGroupPage();
-        if (!app.isGroupPresent()) {
-            app.createGroup(new GroupData("group name", "group header", "group footer"));
+        app.groups().openGroupPage();
+        if (!app.groups().isGroupPresent()) {
+            app.groups().createGroup(new GroupData("group name", "group header", "group footer"));
         }
-        removeGroup();
-    }
-
-    private static void removeGroup() {
-        ApplicationManager.driver.findElement(By.name("selected[]")).click();
-        ApplicationManager.driver.findElement(By.name("delete")).click();
-        ApplicationManager.driver.findElement(By.linkText("group page")).click();
+        app.groups().removeGroup();
     }
 
 }
