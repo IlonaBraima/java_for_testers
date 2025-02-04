@@ -2,6 +2,7 @@ package manager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 public class ApplicationManager {
 
     protected WebDriver driver;
@@ -13,9 +14,15 @@ public class ApplicationManager {
     private UserHelper users;
 
 
-    public void init() {
+    public void init(String browser) {
         if (driver == null) {
-            driver = new ChromeDriver();
+            if ("firefox".equals(browser)){
+                driver = new ChromeDriver();
+            } else if ("chrome".equals(browser)) {
+                    driver = new ChromeDriver();
+            } else {
+                throw new IllegalArgumentException(String.format("Unknown browser %s", browser));
+            }
             Runtime.getRuntime().addShutdownHook(new Thread(driver::quit));
             driver.get("http://localhost/addressbook/");
             driver.manage().window().setSize(new Dimension(970, 668));
@@ -51,5 +58,9 @@ public class ApplicationManager {
         } catch (NoSuchElementException exception) {
             return false;
         }
+    }
+
+    public void acceptAlert() {
+        driver.switchTo().alert().accept();
     }
 }

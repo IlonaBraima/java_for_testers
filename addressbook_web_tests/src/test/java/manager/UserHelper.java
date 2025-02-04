@@ -2,14 +2,11 @@ package manager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class UserHelper {
 
     private final ApplicationManager manager;
-
-  //  public WebDriver driver;
 
     public UserHelper(ApplicationManager manager) {
         this.manager = manager;
@@ -83,8 +80,14 @@ public class UserHelper {
         manager.driver.findElement(By.name("selected[]")).click();
         manager.driver.findElement(By.cssSelector(".left:nth-child(8) > input")).click();
         manager.driver.get("http://localhost/addressbook/");
+
+    }
+
+    public void deleteAllUsers() {
+        openHomePage();
         manager.driver.findElement(By.id("MassCB")).click();
         manager.driver.findElement(By.cssSelector(".left:nth-child(8) > input")).click();
+        //manager.driver.get("http://localhost/addressbook/");
 
     }
 
@@ -105,13 +108,4 @@ public class UserHelper {
         return manager.isElementPresent(By.name("entry"));
     }
 
-    public boolean isAlertPresent() {
-        openHomePage();
-        try {
-            manager.driver.switchTo().alert();
-            return true;
-        } catch (NoAlertPresentException e) {
-            return false;
-        }
-    }
 }

@@ -10,10 +10,6 @@ public class RemoveUserTest extends TestBase {
             app.users().createUser();
         }
         app.users().removeUser();
-
-//        if (app.users().isAlertPresent()) {
-//            app.users().driver.switchTo().alert().accept();
-//        }
     }
 }
 
