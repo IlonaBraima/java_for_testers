@@ -6,9 +6,10 @@ public class DeleteAllUsersTest extends TestBase {
 
     @Test
     public void CanDeleteUsers() {
-
+        if (!app.users().isUserListPresent()) {
+            app.users().createUser();
+        }
         app.users().deleteAllUsers();
-        app.acceptAlert();
 
     }
 }

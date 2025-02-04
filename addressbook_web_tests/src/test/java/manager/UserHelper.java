@@ -87,7 +87,11 @@ public class UserHelper {
         openHomePage();
         manager.driver.findElement(By.id("MassCB")).click();
         manager.driver.findElement(By.cssSelector(".left:nth-child(8) > input")).click();
-        //manager.driver.get("http://localhost/addressbook/");
+        manager.driver.get("http://localhost/addressbook/");
+        manager.driver.findElement(By.id("MassCB")).click();
+        manager.driver.findElement(By.cssSelector(".left:nth-child(8) > input")).click();
+        manager.driver.switchTo().alert().accept();
+
 
     }
 
