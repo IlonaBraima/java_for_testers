@@ -16,9 +16,9 @@ public class ApplicationManager {
 
     public void init(String browser) {
         if (driver == null) {
-            if ("firefox".equals(browser)){
+            if ("chrome".equals(browser)){
                 driver = new ChromeDriver();
-            } else if ("chrome".equals(browser)) {
+            } else if ("firefox".equals(browser)) {
                     driver = new ChromeDriver();
             } else {
                 throw new IllegalArgumentException(String.format("Unknown browser %s", browser));

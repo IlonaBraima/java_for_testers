@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/UserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/UserHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/DeleteAllUsersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/DeleteAllUsersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +80,7 @@
     "Gradle.DeleteAllUsersTest.executor": "Run",
     "Gradle.DeleteGroupTest.deleteGroup.executor": "Run",
     "Gradle.DeleteGroupTest.executor": "Run",
+    "Gradle.GroupCreationTest.CanCreateGroup.executor": "Run",
     "Gradle.GroupCreationTest.CanCreateGroupWithNameOnly.executor": "Run",
     "Gradle.GroupCreationTest.executor": "Run",
     "Gradle.GroupCreationTest.groupcreate.executor": "Run",
@@ -100,6 +104,7 @@
     "Gradle.sandbox [:ru.stga.geometry.Geometry.main()].executor": "Run",
     "Gradle.squareTest.canCalculateArea.executor": "Run",
     "Gradle.squareTest.canCalculatePerimeter.executor": "Run",
+    "JUnit.GroupCreationTest.executor": "Run",
     "JUnit.RectangleTest.cannotCreateRectangleWithNegativeSide.executor": "Run",
     "JUnit.RectangleTest.testEquality.executor": "Run",
     "JUnit.RectangleTest.testEquality2.executor": "Run",
@@ -144,36 +149,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.DeleteAllUsersTest">
-    <configuration name="CreateUserTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.CreateUserTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="DeleteAllUsersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="-Pbrowser=firefox" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -216,30 +197,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RemoveUserTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.RemoveUserTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="RemoveUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -265,19 +222,15 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.CreateUserTest (1)" />
       <item itemvalue="Gradle.DeleteAllUsersTest" />
       <item itemvalue="Gradle.DeleteAllUsersTest.CanDeleteUsers" />
-      <item itemvalue="Gradle.RemoveUserTest (1)" />
       <item itemvalue="Gradle.RemoveUserTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.DeleteAllUsersTest" />
-        <item itemvalue="Gradle.CreateUserTest (1)" />
         <item itemvalue="Gradle.RemoveUserTest" />
         <item itemvalue="Gradle.DeleteAllUsersTest.CanDeleteUsers" />
-        <item itemvalue="Gradle.RemoveUserTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -306,7 +259,7 @@
       <workItem from="1738422365854" duration="975000" />
       <workItem from="1738423433364" duration="9879000" />
       <workItem from="1738490076559" duration="8095000" />
-      <workItem from="1738511946326" duration="40894000" />
+      <workItem from="1738511946326" duration="47936000" />
     </task>
     <servers />
   </component>
