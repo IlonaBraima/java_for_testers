@@ -59,8 +59,4 @@ public class ApplicationManager {
             return false;
         }
     }
-
-    public void acceptAlert() {
-        driver.switchTo().alert().accept();
-    }
 }
