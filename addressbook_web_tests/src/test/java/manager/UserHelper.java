@@ -15,7 +15,6 @@ public class UserHelper extends HelperBase {
         fillUserForm();
         submitUserCreation();
         openHomePage();
-
     }
 
     public void removeUser() {
@@ -39,7 +38,6 @@ public class UserHelper extends HelperBase {
         fillBirthAndAnniversary();
     }
 
-    // Заполнение личных данных
     private void fillPersonalDetails() {
         enterText(By.name("firstname"), "First name");
         enterText(By.name("middlename"), "Middle name");
@@ -48,13 +46,10 @@ public class UserHelper extends HelperBase {
         enterText(By.name("title"), "Title");
     }
 
-    // Заполнение данных о компании
     private void fillCompanyDetails() {
         enterText(By.name("company"), "Company");
         enterText(By.name("address"), "Address");
     }
-
-    // Заполнение контактной информации
     private void fillContactDetails() {
         enterText(By.name("home"), "12345");
         enterText(By.name("mobile"), "12345");
@@ -62,7 +57,6 @@ public class UserHelper extends HelperBase {
         enterText(By.name("fax"), "12345");
     }
 
-    // Заполнение email и веб-сайта
     private void fillEmailsAndWebsite() {
         enterText(By.name("email"), "test@test.com");
         enterText(By.name("email2"), "test1@test.com");
@@ -70,7 +64,6 @@ public class UserHelper extends HelperBase {
         enterText(By.name("homepage"), "homepage");
     }
 
-    // Заполнение даты рождения и годовщины
     private void fillBirthAndAnniversary() {
         selectDropdownValue(By.name("bday"), "1");
         selectDropdownValue(By.name("bmonth"), "January");
@@ -93,64 +86,6 @@ public class UserHelper extends HelperBase {
     private void selectDropdownValue(By locator, String value) {
         WebElement dropdown = manager.driver.findElement(locator);
         dropdown.findElement(By.xpath("//option[. = '" + value + "']")).click();
-
-//    private void fillUserForm() {
-//        manager.driver.findElement(By.name("firstname")).click();
-//        manager.driver.findElement(By.name("firstname")).sendKeys("First name");
-//        manager.driver.findElement(By.name("middlename")).click();
-//        manager.driver.findElement(By.name("middlename")).sendKeys("Middle name");
-//        manager.driver.findElement(By.name("lastname")).click();
-//        manager.driver.findElement(By.name("lastname")).sendKeys("Last name");
-//        manager.driver.findElement(By.name("nickname")).click();
-//        manager.driver.findElement(By.name("nickname")).sendKeys("Nickname");
-//        manager.driver.findElement(By.name("title")).click();
-//        manager.driver.findElement(By.name("title")).sendKeys("Title");
-//        manager.driver.findElement(By.name("theform")).click();
-//        manager.driver.findElement(By.name("company")).click();
-//        manager.driver.findElement(By.name("company")).sendKeys("Company");
-//        manager.driver.findElement(By.name("address")).click();
-//        manager.driver.findElement(By.name("address")).sendKeys("Address");
-//        manager.driver.findElement(By.name("mobile")).click();
-//        manager.driver.findElement(By.name("home")).click();
-//        manager.driver.findElement(By.name("home")).sendKeys("12345");
-//        manager.driver.findElement(By.name("mobile")).click();
-//        manager.driver.findElement(By.name("mobile")).sendKeys("12345");
-//        manager.driver.findElement(By.name("work")).click();
-//        manager.driver.findElement(By.name("work")).sendKeys("12354");
-//        manager.driver.findElement(By.name("fax")).click();
-//        manager.driver.findElement(By.name("fax")).sendKeys("12345");
-//        manager.driver.findElement(By.name("email")).click();
-//        manager.driver.findElement(By.name("email")).sendKeys("test@test.com");
-//        manager.driver.findElement(By.name("email2")).click();
-//        manager.driver.findElement(By.name("email2")).sendKeys("test1@test.com");
-//        manager.driver.findElement(By.name("email3")).click();
-//        manager.driver.findElement(By.name("email3")).sendKeys("test2@test.com");
-//        manager.driver.findElement(By.name("homepage")).click();
-//        manager.driver.findElement(By.name("homepage")).sendKeys("homepage");
-//        manager.driver.findElement(By.name("bday")).click();
-//        {
-//            WebElement dropdown = manager.driver.findElement(By.name("bday"));
-//            dropdown.findElement(By.xpath("//option[. = '1']")).click();
-//        }
-//        manager.driver.findElement(By.name("bmonth")).click();
-//        {
-//            WebElement dropdown = manager.driver.findElement(By.name("bmonth"));
-//            dropdown.findElement(By.xpath("//option[. = 'January']")).click();
-//        }
-//        manager.driver.findElement(By.name("byear")).click();
-//        manager.driver.findElement(By.name("byear")).sendKeys("1990");
-//        manager.driver.findElement(By.name("aday")).click();
-//        {
-//            WebElement dropdown = manager.driver.findElement(By.name("aday"));
-//            dropdown.findElement(By.xpath("//option[. = '1']")).click();
-//        }
-//        manager.driver.findElement(By.name("amonth")).click();
-//        {
-//            WebElement dropdown = manager.driver.findElement(By.name("amonth"));
-//            dropdown.findElement(By.xpath("//option[. = 'January']")).click();
-//        }
-//        manager.driver.findElement(By.name("ayear")).click();
-//        manager.driver.findElement(By.name("ayear")).sendKeys("2000");
   }
 
     private void removedAllUsers() {
