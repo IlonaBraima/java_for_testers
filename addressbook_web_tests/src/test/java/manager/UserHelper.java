@@ -121,5 +121,4 @@ public class UserHelper extends HelperBase {
         openHomePage();
         return manager.isElementPresent(By.name("entry"));
     }
-
 }
