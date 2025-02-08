@@ -8,4 +8,9 @@ public class CreateUserTest extends TestBase {
   public void CanCreateUser() {
     app.users().createUser();
   }
+
+  @Test
+  public void CanCreateUsers() {
+    app.users().createUser();
+  }
 }
