@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/GroupHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/DeleteGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/DeleteGroupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
     "Gradle.DeleteAllUsersTest.executor": "Run",
     "Gradle.DeleteGroupTest.deleteGroup.executor": "Run",
     "Gradle.DeleteGroupTest.executor": "Run",
-    "Gradle.GroupCreationTest.CanCreateGroup.executor": "Run",
+    "Gradle.GroupCreationTest.CanCreateGroup.executor": "Debug",
     "Gradle.GroupCreationTest.CanCreateGroupWithNameOnly.executor": "Run",
     "Gradle.GroupCreationTest.executor": "Run",
     "Gradle.GroupCreationTest.groupcreate.executor": "Run",
@@ -151,7 +150,7 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.DeleteGroupTest">
     <configuration name="CreateUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -176,12 +175,12 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DeleteAllUsersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DeleteGroupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="-Pbrowser=firefox" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -189,7 +188,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.DeleteAllUsersTest&quot;" />
+            <option value="&quot;tests.DeleteGroupTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -200,36 +199,53 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CollectionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.collections.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.collections" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.collections.CollectionTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="GroupCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.GroupCreationTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="CollectionTests.arrayTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.collections.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.collections" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.collections.CollectionTests" />
-      <option name="METHOD_NAME" value="arrayTests" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="GroupCreationTest.CanCreateGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.GroupCreationTest.CanCreateGroup&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="CollectionTests.listTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
@@ -248,19 +264,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.DeleteGroupTest" />
+      <item itemvalue="Gradle.GroupCreationTest" />
+      <item itemvalue="Gradle.GroupCreationTest.CanCreateGroup" />
       <item itemvalue="Gradle.CreateUserTest" />
-      <item itemvalue="Gradle.DeleteAllUsersTest" />
-      <item itemvalue="JUnit.CollectionTests" />
-      <item itemvalue="JUnit.CollectionTests.arrayTests" />
       <item itemvalue="JUnit.CollectionTests.listTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CollectionTests.listTest" />
-        <item itemvalue="JUnit.CollectionTests.arrayTests" />
-        <item itemvalue="JUnit.CollectionTests" />
-        <item itemvalue="Gradle.DeleteAllUsersTest" />
+        <item itemvalue="Gradle.DeleteGroupTest" />
+        <item itemvalue="Gradle.GroupCreationTest.CanCreateGroup" />
+        <item itemvalue="Gradle.GroupCreationTest" />
         <item itemvalue="Gradle.CreateUserTest" />
+        <item itemvalue="JUnit.CollectionTests.listTest" />
       </list>
     </recent_temporary>
   </component>
@@ -290,7 +306,8 @@
       <workItem from="1738423433364" duration="9879000" />
       <workItem from="1738490076559" duration="8095000" />
       <workItem from="1738511946326" duration="59476000" />
-      <workItem from="1739003469935" duration="7348000" />
+      <workItem from="1739003469935" duration="7853000" />
+      <workItem from="1739037129071" duration="960000" />
     </task>
     <servers />
   </component>
