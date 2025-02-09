@@ -1,6 +1,5 @@
 package manager;
 
-import model.GroupData;
 import model.UserData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -38,6 +37,15 @@ public class UserHelper extends HelperBase {
         fillContactDetails();
         fillEmailsAndWebsite(user);
         fillBirthAndAnniversary();
+    }
+
+    public void modifyUser(UserData modifiedName) {
+        openHomePage();
+        SelectedUser();
+        initUserModification();
+        fillUserForm(modifiedName);
+        submitUserModification();
+        returnToHomePage();
     }
 
     private void fillPersonalDetails(UserData user) {
@@ -130,4 +138,19 @@ public class UserHelper extends HelperBase {
         return manager.driver.findElements(By.name("selected[]")).size();
     }
 
+    private void returnToHomePage() {
+        click(By.linkText("home page"));
+    }
+
+    private void submitUserModification() {
+        click(By.name("update"));
+    }
+
+    public void SelectedUser() {
+        click(By.name("entry"));
+    }
+
+    public void initUserModification() {
+        click(By.xpath("//a[img[contains(@src, 'icons/pencil.png')]]"));
+    }
 }
