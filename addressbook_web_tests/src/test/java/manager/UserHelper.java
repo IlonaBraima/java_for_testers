@@ -1,5 +1,7 @@
 package manager;
 
+import model.GroupData;
+import model.UserData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -9,10 +11,10 @@ public class UserHelper extends HelperBase {
         super(manager);
     }
 
-    public void createUser() {
+    public void createUser(UserData user) {
         openAddNewUserPage();
         initNewNameCreation();
-        fillUserForm();
+        fillUserForm(user);
         submitUserCreation();
         openHomePage();
     }
@@ -30,21 +32,22 @@ public class UserHelper extends HelperBase {
         switchtToAlert();
     }
 
-    public void fillUserForm() {
-        fillPersonalDetails();
+    public void fillUserForm(UserData user) {
+        fillPersonalDetails(user);
         fillCompanyDetails();
         fillContactDetails();
-        fillEmailsAndWebsite();
+        fillEmailsAndWebsite(user);
         fillBirthAndAnniversary();
     }
 
-    private void fillPersonalDetails() {
-        enterText(By.name("firstname"), "First name");
-        enterText(By.name("middlename"), "Middle name");
-        enterText(By.name("lastname"), "Last name");
-        enterText(By.name("nickname"), "Nickname");
-        enterText(By.name("title"), "Title");
+    private void fillPersonalDetails(UserData user) {
+        enterText(By.name("firstname"), user.firstName());
+        enterText(By.name("middlename"), user.middleName());
+        enterText(By.name("lastname"), user.lastName());
+        enterText(By.name("nickname"), user.nickName());
+        enterText(By.name("title"), user.title());
     }
+
 
     private void fillCompanyDetails() {
         enterText(By.name("company"), "Company");
@@ -57,8 +60,8 @@ public class UserHelper extends HelperBase {
         enterText(By.name("fax"), "12345");
     }
 
-    private void fillEmailsAndWebsite() {
-        enterText(By.name("email"), "test@test.com");
+    private void fillEmailsAndWebsite(UserData user) {
+        enterText(By.name("email"), user.email());
         enterText(By.name("email2"), "test1@test.com");
         enterText(By.name("email3"), "test2@test.com");
         enterText(By.name("homepage"), "homepage");
@@ -121,4 +124,10 @@ public class UserHelper extends HelperBase {
         openHomePage();
         return manager.isElementPresent(By.name("entry"));
     }
+
+    public int getCount() {
+        openHomePage();
+        return manager.driver.findElements(By.name("selected[]")).size();
+    }
+
 }
