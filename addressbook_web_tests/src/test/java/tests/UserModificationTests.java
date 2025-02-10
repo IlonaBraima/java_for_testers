@@ -12,5 +12,4 @@ public class UserModificationTests extends TestBase {
         }
         app.users().modifyUser(new UserData().withFirstName("modified name"));
     }
-   // click(By.xpath(//*[@id="maintable"]/tbody/tr[2]/td[2]));
 }

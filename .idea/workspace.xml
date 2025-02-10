@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/GroupHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/UserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/UserHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/model/GroupData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/model/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/model/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/CreateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/CreateUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/DeleteGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/DeleteGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupModificationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/RemoveUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/RemoveUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/UserModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/UserModificationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,19 +85,20 @@
     "Gradle.DeleteAllUsersTest.CanDeleteUsers.executor": "Debug",
     "Gradle.DeleteAllUsersTest.executor": "Run",
     "Gradle.DeleteGroupTest.canRemoveAllGroupOnce.executor": "Run",
-    "Gradle.DeleteGroupTest.deleteGroup.executor": "Run",
+    "Gradle.DeleteGroupTest.deleteGroup.executor": "Debug",
     "Gradle.DeleteGroupTest.executor": "Run",
     "Gradle.GroupCreationTest.CanCreateGroup.executor": "Debug",
     "Gradle.GroupCreationTest.CanCreateGroupWithEmptyName.executor": "Run",
     "Gradle.GroupCreationTest.CanCreateGroupWithNameOnly.executor": "Run",
     "Gradle.GroupCreationTest.CanCreateMultipleGroups.executor": "Run",
+    "Gradle.GroupCreationTest.canNotCreateGroup.executor": "Run",
     "Gradle.GroupCreationTest.executor": "Run",
     "Gradle.GroupCreationTest.groupcreate.executor": "Run",
     "Gradle.GroupCreationTest.test.executor": "Run",
     "Gradle.GroupModificationTests.executor": "Run",
     "Gradle.RemoveUserTest (1).executor": "Run",
     "Gradle.RemoveUserTest.CanRemoveUser (1).executor": "Debug",
-    "Gradle.RemoveUserTest.CanRemoveUser.executor": "Run",
+    "Gradle.RemoveUserTest.CanRemoveUser.executor": "Debug",
     "Gradle.RemoveUserTest.executor": "Debug",
     "Gradle.RemoveUserTest.removeUser.executor": "Run",
     "Gradle.Tests in 'tests'.executor": "Run",
@@ -153,8 +164,8 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserModificationTests">
-    <configuration name="CreateUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.RemoveUserTest">
+    <configuration name="DeleteGroupTest.deleteGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -167,7 +178,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.CreateUserTest&quot;" />
+            <option value="&quot;tests.DeleteGroupTest.deleteGroup&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -178,7 +189,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DeleteAllUsersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -191,7 +202,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.DeleteAllUsersTest&quot;" />
+            <option value="&quot;tests.GroupCreationTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -202,7 +213,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTest.CanCreateMultipleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTest.canNotCreateGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -215,7 +226,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.GroupCreationTest.CanCreateMultipleGroups&quot;" />
+            <option value="&quot;tests.GroupCreationTest.canNotCreateGroup&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -250,7 +261,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UserModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RemoveUserTest.CanRemoveUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -263,7 +274,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.UserModificationTests&quot;" />
+            <option value="&quot;tests.RemoveUserTest.CanRemoveUser&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -275,19 +286,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.DeleteAllUsersTest" />
-      <item itemvalue="Gradle.GroupCreationTest.CanCreateMultipleGroups" />
+      <item itemvalue="Gradle.DeleteGroupTest.deleteGroup" />
+      <item itemvalue="Gradle.GroupCreationTest" />
+      <item itemvalue="Gradle.GroupCreationTest.canNotCreateGroup" />
+      <item itemvalue="Gradle.RemoveUserTest.CanRemoveUser" />
       <item itemvalue="Gradle.RemoveUserTest" />
-      <item itemvalue="Gradle.UserModificationTests" />
-      <item itemvalue="Gradle.CreateUserTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UserModificationTests" />
-        <item itemvalue="Gradle.CreateUserTest" />
         <item itemvalue="Gradle.RemoveUserTest" />
-        <item itemvalue="Gradle.DeleteAllUsersTest" />
-        <item itemvalue="Gradle.GroupCreationTest.CanCreateMultipleGroups" />
+        <item itemvalue="Gradle.RemoveUserTest.CanRemoveUser" />
+        <item itemvalue="Gradle.DeleteGroupTest.deleteGroup" />
+        <item itemvalue="Gradle.GroupCreationTest.canNotCreateGroup" />
+        <item itemvalue="Gradle.GroupCreationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -336,10 +347,14 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/UserModificationTests.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/RemoveUserTest.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="8" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -4,6 +4,9 @@ import model.UserData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UserHelper extends HelperBase {
 
     public UserHelper(ApplicationManager manager) {
@@ -18,15 +21,16 @@ public class UserHelper extends HelperBase {
         openHomePage();
     }
 
-    public void removeUser() {
+    public void removeUser(UserData user) {
         openHomePage();
-        removedAllUsers();
+        SelectedUser(user);
+        removeSelectedUser();
         openHomePage();
     }
 
     public void deleteAllUsers() {
         openHomePage();
-        removeUser();
+        removeUser(null);
         removedAllUsers();
         switchtToAlert();
     }
@@ -41,7 +45,7 @@ public class UserHelper extends HelperBase {
 
     public void modifyUser(UserData modifiedName) {
         openHomePage();
-        SelectedUser();
+        SelectedUser(null);
         initUserModification();
         fillUserForm(modifiedName);
         submitUserModification();
@@ -116,6 +120,9 @@ public class UserHelper extends HelperBase {
         manager.driver.findElement(By.linkText("add new")).click();
     }
 
+    private void removeSelectedUser() {
+    manager.driver.findElement(By.xpath("/html/body/div/div[4]/form[2]/div[2]/input")).click(); }
+
     public void openAddNewUserPage() {
         if (!manager.isElementPresent(By.name("submit"))) {
             manager.driver.get("http://localhost/addressbook/group.php");
@@ -146,11 +153,23 @@ public class UserHelper extends HelperBase {
         click(By.name("update"));
     }
 
-    public void SelectedUser() {
-        click(By.name("entry"));
+    public void SelectedUser(UserData user) {
+        click(By.cssSelector(String.format("input[value='%s']", user.id())));;
     }
 
     public void initUserModification() {
         click(By.xpath("//a[img[contains(@src, 'icons/pencil.png')]]"));
+    }
+
+    public List<UserData> getList() {
+        var users = new ArrayList<UserData>();
+        var trs = manager.driver.findElements(By.name("entry"));
+        for (var tr : trs) {
+            var firstname = tr.getText();
+            var checkbox = tr.findElement(By.name("selected[]"));
+            var id = checkbox.getAttribute("value");
+            users.add(new UserData().withId(id).withFirstName(firstname));
+        }
+        return users;
     }
 }

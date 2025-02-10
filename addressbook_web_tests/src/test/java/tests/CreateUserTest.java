@@ -19,14 +19,14 @@ public class CreateUserTest extends TestBase {
           for (var nickName : List.of("", "nickName")) {
             for (var title : List.of("", "title")) {
               for (var email : List.of("", "anoli@test.com"))
-                result.add(new UserData(firstName, middleName, lastName, nickName, title, email));
+                result.add(new UserData("", firstName, middleName, lastName, nickName, title, email));
               }
           }
         }
       }
     }
       for (int i = 0; i < 5; i++) {
-        result.add(new UserData(randomString(i * 10), randomString(i * 10), randomString(i * 10), randomString(i * 10), randomString(i * 10), randomString(i * 10)));
+        result.add(new UserData("", randomString(i * 10), randomString(i * 10), randomString(i * 10), randomString(i * 10), randomString(i * 10), randomString(i * 10)));
       }
       return result;
     }
