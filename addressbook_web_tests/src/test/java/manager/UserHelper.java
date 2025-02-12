@@ -43,9 +43,9 @@ public class UserHelper extends HelperBase {
         fillBirthAndAnniversary();
     }
 
-    public void modifyUser(UserData modifiedName) {
+    public void modifyUser(UserData user, UserData modifiedName) {
         openHomePage();
-        SelectedUser(null);
+        SelectedUser(user);
         initUserModification();
         fillUserForm(modifiedName);
         submitUserModification();
