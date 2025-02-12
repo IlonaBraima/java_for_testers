@@ -36,18 +36,17 @@ public class UserHelper extends HelperBase {
     }
 
     public void fillUserForm(UserData user) {
-        fillPersonalDetails(user);
         fillCompanyDetails();
         fillContactDetails();
         fillEmailsAndWebsite(user);
         fillBirthAndAnniversary();
     }
 
-    public void modifyUser(UserData user, UserData modifiedName) {
+    public void modifyUser(UserData user, UserData modifiedUser) {
         openHomePage();
         SelectedUser(user);
-        initUserModification();
-        fillUserForm(modifiedName);
+        initUserModification(user);
+        fillPersonalDetails(modifiedUser);
         submitUserModification();
         returnToHomePage();
     }
@@ -154,11 +153,11 @@ public class UserHelper extends HelperBase {
     }
 
     public void SelectedUser(UserData user) {
-        click(By.cssSelector(String.format("input[value='%s']", user.id())));;
+        click(By.cssSelector(String.format("input[value='%s']", user.id())));
     }
 
-    public void initUserModification() {
-        click(By.xpath("//a[img[contains(@src, 'icons/pencil.png')]]"));
+    public void initUserModification(UserData user) {
+        click(By.xpath(String.format("//a[@href='edit.php?id=%s']/img[contains(@src, 'pencil.png')]", user.id())));
     }
 
     public List<UserData> getList() {
