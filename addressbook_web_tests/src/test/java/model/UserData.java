@@ -12,7 +12,7 @@ public record UserData(
 ) {
 
     public UserData() {
-        this ("", "", "", "", "", "", "");
+        this("", "", "", "", "", "", "");
     }
 
     public UserData withId(String id) {
@@ -30,4 +30,17 @@ public record UserData(
     public UserData withNickName(String nickname) {
         return new UserData(this.id, this.firstname, this.middlename, this.lastname, nickname, this.title, this.email);
     }
+
+    public UserData withMiddleName(String middlename) {
+        return new UserData(this.id, this.firstname, middlename, this.lastname, this.nickname, this.title, this.email);
+    }
+
+    public UserData withTitle(String title) {
+        return new UserData(this.id, this.firstname, this.middlename, this.lastname, this.nickname, title, this.email);
+    }
+
+    public UserData withEmail(String email) {
+        return new UserData(this.id, this.firstname, this.middlename, this.lastname, this.nickname, this.title, email);
+    }
+
 }
