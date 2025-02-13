@@ -7,6 +7,7 @@
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/UserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/UserHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/model/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/model/UserData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +69,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Hello.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
     "Gradle.Build addressbook_web_tests.executor": "Run",
     "Gradle.CreateUserTest (1).executor": "Run",
     "Gradle.CreateUserTest.createUser.executor": "Run",
@@ -85,7 +87,7 @@
     "Gradle.GroupCreationTest.executor": "Run",
     "Gradle.GroupCreationTest.groupcreate.executor": "Run",
     "Gradle.GroupCreationTest.test.executor": "Run",
-    "Gradle.GroupModificationTests.canModifyGroup.executor": "Debug",
+    "Gradle.GroupModificationTests.canModifyGroup.executor": "Run",
     "Gradle.GroupModificationTests.executor": "Run",
     "Gradle.RemoveUserTest (1).executor": "Run",
     "Gradle.RemoveUserTest.CanRemoveUser (1).executor": "Debug",
@@ -99,7 +101,7 @@
     "Gradle.TriangleTest.canCalculatePerimeter.executor": "Run",
     "Gradle.TriangleTest.canCalculateSemiPerimeter.executor": "Run",
     "Gradle.TriangleTest.canCalculateSemiPerimeter2.executor": "Run",
-    "Gradle.UserModificationTests.canModifyUser.executor": "Debug",
+    "Gradle.UserModificationTests.canModifyUser.executor": "Run",
     "Gradle.UserModificationTests.executor": "Run",
     "Gradle.addressbook_web_tests [:org.example.Main.main()].executor": "Run",
     "Gradle.addressbook_web_tests [dependencies].executor": "Run",
@@ -128,6 +130,9 @@
     "JUnit.squareTest.testFail.executor": "Run",
     "JUnit.squareTest.testNonEquality.executor": "Run",
     "JUnit.squareTest.testPassed.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -156,7 +161,7 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserModificationTests.canModifyUser">
+  <component name="RunManager" selected="Gradle.UserModificationTests">
     <configuration name="GroupModificationTests.canModifyGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -286,9 +291,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UserModificationTests.canModifyUser" />
         <item itemvalue="Gradle.UserModificationTests" />
         <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
+        <item itemvalue="Gradle.UserModificationTests.canModifyUser" />
         <item itemvalue="Gradle.RemoveUserTest" />
         <item itemvalue="Gradle.RemoveUserTest.CanRemoveUser" />
       </list>
@@ -338,14 +343,13 @@
           <line>13</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupModificationTests.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="8" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.opentest4j.AssertionFailedError" package="org.opentest4j" />
+          <option name="timeStamp" value="30" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

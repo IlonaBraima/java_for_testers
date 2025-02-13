@@ -44,18 +44,19 @@ public class UserHelper extends HelperBase {
 
     public void modifyUser(UserData user, UserData modifiedUser) {
         openHomePage();
-        SelectedUser(user);
-        initUserModification(user);
+        //SelectedUser(user);
+        initUserModification();
+        submitUserModify();
         fillPersonalDetails(modifiedUser);
         submitUserModification();
         returnToHomePage();
     }
 
     private void fillPersonalDetails(UserData user) {
-        enterText(By.name("firstname"), user.firstName());
-        enterText(By.name("middlename"), user.middleName());
-        enterText(By.name("lastname"), user.lastName());
-        enterText(By.name("nickname"), user.nickName());
+        enterText(By.name("firstname"), user.firstname());
+        enterText(By.name("middlename"), user.middlename());
+        enterText(By.name("lastname"), user.lastname());
+        enterText(By.name("nickname"), user.nickname());
         enterText(By.name("title"), user.title());
     }
 
@@ -152,19 +153,28 @@ public class UserHelper extends HelperBase {
         click(By.name("update"));
     }
 
+    private void submitUserModify() {
+    click(By.xpath("/html/body/div/div[4]/form[1]/input[2]"));
+}
+
     public void SelectedUser(UserData user) {
         click(By.cssSelector(String.format("input[value='%s']", user.id())));
     }
 
-    public void initUserModification(UserData user) {
-        click(By.xpath(String.format("//a[@href='edit.php?id=%s']/img[contains(@src, 'pencil.png')]", user.id())));
+    public void initUserModification() {
+        click(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[3]/td[7]/a"));
+        //click(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[8]/a"));
+
+        ///driver.findElements(By.className("fdTableSortTrigger")); ищет элементы только по одному классу.
+        //driver.findElements(By.cssSelector(".fdTableSortTrigger")); более гибкий, можно комбинировать с другими селекторами (например, div.fdTableSortTrigger).
     }
 
     public List<UserData> getList() {
         var users = new ArrayList<UserData>();
         var trs = manager.driver.findElements(By.name("entry"));
         for (var tr : trs) {
-            var firstname = tr.getText();
+            var firstname = tr.findElement(By.cssSelector("td:nth-child(3)")).getText();
+                    //(By.xpath(".//td[3]")).getText();
             var checkbox = tr.findElement(By.name("selected[]"));
             var id = checkbox.getAttribute("value");
             users.add(new UserData().withId(id).withFirstName(firstname));

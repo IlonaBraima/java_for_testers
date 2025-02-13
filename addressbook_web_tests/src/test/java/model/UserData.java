@@ -2,10 +2,10 @@ package model;
 
 public record UserData(
         String id,
-        String firstName,
-        String middleName,
-        String lastName,
-        String nickName,
+        String firstname,
+        String middlename,
+        String lastname,
+        String nickname,
         String title,
         String email
 
@@ -16,18 +16,18 @@ public record UserData(
     }
 
     public UserData withId(String id) {
-        return new UserData(id, this.firstName, this.middleName, this.lastName, this.nickName, this.title, this.email);
+        return new UserData(id, this.firstname, this.middlename, this.lastname, this.nickname, this.title, this.email);
     }
 
-    public UserData withFirstName(String firstName) {
-        return new UserData(this.id, firstName, this.middleName, this.lastName, this.nickName, this.title, this.email);
+    public UserData withFirstName(String firstname) {
+        return new UserData(this.id, firstname, this.middlename, this.lastname, this.nickname, this.title, this.email);
     }
 
-    public UserData withLastName(String lastName) {
-        return new UserData(this.id, this.firstName, this.middleName, lastName, this.nickName, this.title, this.email);
+    public UserData withLastName(String lastname) {
+        return new UserData(this.id, this.firstname, this.middlename, lastname, this.nickname, this.title, this.email);
     }
 
-    public UserData withNickName(String nickName) {
-        return new UserData(this.id, this.firstName, this.middleName, this.lastName, nickName, this.title, this.email);
+    public UserData withNickName(String nickname) {
+        return new UserData(this.id, this.firstname, this.middlename, this.lastname, nickname, this.title, this.email);
     }
 }
