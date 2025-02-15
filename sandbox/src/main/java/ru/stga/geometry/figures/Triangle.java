@@ -1,10 +1,8 @@
 package ru.stga.geometry.figures;
 
-import java.util.Objects;
+public record Triangle(double length1, double length2, double length3) {
 
-public record Triangle (double length1, double length2, double length3) {
-
-    public Triangle{
+    public Triangle {
         if (length1 <= 0 || length2 <= 0 || length3 <= 0) {
             throw new IllegalArgumentException("Triangle side should be negative");
         }
@@ -46,11 +44,19 @@ public record Triangle (double length1, double length2, double length3) {
         System.out.println(text);
     }
 
-    public double area() {
-        return Math.sqrt((this.semiPerimeter()) * ((this.semiPerimeter()) - this.length1) * ((this.semiPerimeter()) - this.length2) * ((this.semiPerimeter()) - this.length3));
+    public double perimeter(
+
+    ) {
+        return this.length1 + this.length2 + this.length3;
     }
 
-    public double semiPerimeter() {return ((this.length1 + this.length2 + this.length3) / 2.);
+    public double area() {
+        double semiPerimeter = perimeter() / 2;
+        return Math.sqrt
+                (semiPerimeter
+                        * (semiPerimeter - length1)
+                        * (semiPerimeter - length2)
+                        * (semiPerimeter - length3));
     }
 }
 

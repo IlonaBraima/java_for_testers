@@ -44,8 +44,8 @@ public class TriangleTest {
     }
 
     @Test
-    void canCalculateSemiPerimeter(){
-        Assertions.assertEquals(6., new Triangle(3., 4., 5.).semiPerimeter());
+    void canCalculatePerimeter(){
+        Assertions.assertEquals(12., new Triangle(3., 4., 5.).perimeter());
     }
 }
 
