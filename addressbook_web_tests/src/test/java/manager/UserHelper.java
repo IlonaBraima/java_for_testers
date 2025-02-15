@@ -16,7 +16,8 @@ public class UserHelper extends HelperBase {
     public void createUser(UserData user) {
         openAddNewUserPage();
         initNewNameCreation();
-        fillUserForm(user);
+        //fillUserForm(user);
+        fillPersonalDetails(user);
         submitUserCreation();
         openHomePage();
     }
@@ -47,17 +48,18 @@ public class UserHelper extends HelperBase {
         //SelectedUser(user);
         initUserModification();
         submitUserModify();
-        fillPersonalDetails(modifiedUser);
+        fillPersonalDetails(user);
         submitUserModification();
         returnToHomePage();
     }
 
     private void fillPersonalDetails(UserData user) {
-        enterText(By.name("firstname"), user.firstname());
+        type(By.name("firstname"), user.firstname());
         enterText(By.name("middlename"), user.middlename());
         enterText(By.name("lastname"), user.lastname());
         enterText(By.name("nickname"), user.nickname());
         enterText(By.name("title"), user.title());
+        attach(By.name("photo"), user.photo());
     }
 
 

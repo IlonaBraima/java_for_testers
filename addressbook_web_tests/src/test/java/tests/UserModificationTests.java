@@ -13,7 +13,7 @@ public class UserModificationTests extends TestBase {
     @Test
     void canModifyUser() {
         if (app.users().getCount() == 0) {
-            app.users().createUser(new UserData("", "", "", "", "", "", ""));
+            app.users().createUser(new UserData("", "", "", "", "", "", "", ""));
         }
         var oldUsers = app.users().getList();
         var rnd = new Random();
