@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stga/geometry/figures/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTest.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/GroupHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/UserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/UserHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/model/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/model/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/CreateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/CreateUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupCreationTest.java" afterDir="false" />
+>>>>>>> origin/main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +171,11 @@
       <recent name="Rectangle" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.TriangleTest.canCalculateArea">
+    <configuration name="CreateUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+=======
+  <component name="RunManager" selected="Gradle.CreateUserTest">
     <configuration name="CreateUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -236,6 +248,92 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="GroupModificationTests.canModifyGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+>>>>>>> origin/main
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.CreateUserTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+<<<<<<< HEAD
+    <configuration name="DeleteGroupTest.canRemoveAllGroupOnce" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+=======
+    <configuration name="UserModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+>>>>>>> origin/main
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+<<<<<<< HEAD
+        <option name="scriptParameters" value="" />
+=======
+        <option name="scriptParameters" value="--scan" />
+>>>>>>> origin/main
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+<<<<<<< HEAD
+            <option value="&quot;tests.DeleteGroupTest.canRemoveAllGroupOnce&quot;" />
+=======
+            <option value="&quot;tests.UserModificationTests&quot;" />
+>>>>>>> origin/main
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+<<<<<<< HEAD
+    </configuration>
+    <configuration name="GroupCreationTest.CanCreateMultipleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.GroupCreationTest.CanCreateMultipleGroups&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="TriangleTest.canCalculateArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
       <extension name="coverage">
@@ -268,10 +366,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+    </configuration>
+>>>>>>> origin/main
     <list>
       <item itemvalue="Gradle.CreateUserTest" />
       <item itemvalue="Gradle.DeleteGroupTest.canRemoveAllGroupOnce" />
       <item itemvalue="Gradle.GroupCreationTest.CanCreateMultipleGroups" />
+<<<<<<< HEAD
       <item itemvalue="JUnit.TriangleTest.canCalculateArea" />
       <item itemvalue="JUnit.TriangleTest.canCalculatePerimeter" />
     </list>
@@ -282,6 +384,18 @@
         <item itemvalue="Gradle.CreateUserTest" />
         <item itemvalue="Gradle.DeleteGroupTest.canRemoveAllGroupOnce" />
         <item itemvalue="Gradle.GroupCreationTest.CanCreateMultipleGroups" />
+=======
+      <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
+      <item itemvalue="Gradle.UserModificationTests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.CreateUserTest" />
+        <item itemvalue="Gradle.DeleteGroupTest.canRemoveAllGroupOnce" />
+        <item itemvalue="Gradle.GroupCreationTest.CanCreateMultipleGroups" />
+        <item itemvalue="Gradle.UserModificationTests" />
+        <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
+>>>>>>> origin/main
       </list>
     </recent_temporary>
   </component>
