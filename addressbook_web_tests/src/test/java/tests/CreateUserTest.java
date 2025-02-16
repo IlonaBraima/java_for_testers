@@ -20,7 +20,7 @@ public class CreateUserTest extends TestBase {
     var user = new UserData()
             .withFirstName(randomString(10))
             .withLastName(randomString(10))
-            .withPhoto("src/test/resources/images/avatar.png");
+            .withPhoto(randomFile("src/test/resources/images"));
     app.users().createUser(user);
   }
 
