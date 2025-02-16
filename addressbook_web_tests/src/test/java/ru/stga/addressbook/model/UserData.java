@@ -1,4 +1,4 @@
-package model;
+package ru.stga.addressbook.model;
 
 public record UserData(
         String id,

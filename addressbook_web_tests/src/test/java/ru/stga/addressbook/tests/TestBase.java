@@ -1,8 +1,8 @@
-package tests;
+package ru.stga.addressbook.tests;
 import java.io.File;
 import java.nio.file.Paths;
 import java.util.Random;
-import manager.ApplicationManager;
+import ru.stga.addressbook.manager.ApplicationManager;
 import org.junit.jupiter.api.BeforeEach;
 
 public class TestBase {

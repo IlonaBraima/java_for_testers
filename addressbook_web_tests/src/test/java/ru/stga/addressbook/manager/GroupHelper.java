@@ -1,6 +1,6 @@
-package manager;
+package ru.stga.addressbook.manager;
 
-import model.GroupData;
+import ru.stga.addressbook.model.GroupData;
 import org.openqa.selenium.By;
 
 import java.util.ArrayList;

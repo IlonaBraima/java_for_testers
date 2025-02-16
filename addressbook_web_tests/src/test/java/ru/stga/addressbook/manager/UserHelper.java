@@ -1,6 +1,6 @@
-package manager;
+package ru.stga.addressbook.manager;
 
-import model.UserData;
+import ru.stga.addressbook.model.UserData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 

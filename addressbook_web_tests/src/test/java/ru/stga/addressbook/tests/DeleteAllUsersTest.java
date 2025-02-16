@@ -1,6 +1,6 @@
-package tests;
+package ru.stga.addressbook.tests;
 
-import model.UserData;
+import ru.stga.addressbook.model.UserData;
 
 import org.junit.jupiter.api.Test;
 
