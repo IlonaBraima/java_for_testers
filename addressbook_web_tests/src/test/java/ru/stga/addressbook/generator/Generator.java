@@ -2,6 +2,11 @@ package ru.stga.addressbook.generator;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
+import ru.stga.addressbook.common.CommonFunctions;
+import ru.stga.addressbook.model.GroupData;
+import ru.stga.addressbook.model.UserData;
+
+import java.util.ArrayList;
 
 public class Generator {
 
@@ -33,7 +38,35 @@ public class Generator {
     }
 
     private Object generate() {
-        return null;
+        if("groups".equals(type)) {
+            return generateGroups();
+        } else if ("users".equals(type)) {
+            return generateUsers();
+        } else {
+            throw new IllegalArgumentException("Неизвестный тип данных" + type);
+        }
+    }
+
+    private Object generateGroups() {
+        var result = new ArrayList<GroupData>();
+        for (int i = 0; i < count; i++) {
+            result.add(new GroupData()
+                    .withName(CommonFunctions.randomString(i * 10))
+                    .withHeader(CommonFunctions.randomString(i * 10))
+                    .withFooter(CommonFunctions.randomString(i * 10)));
+        }
+        return result;
+    }
+
+    private Object generateUsers() {
+        var result = new ArrayList<UserData>();
+        for (int i = 0; i < count; i++) {
+            result.add(new UserData()
+                    .withFirstName(CommonFunctions.randomString(i * 10))
+                    .withLastName(CommonFunctions.randomString(i * 10))
+                    .withMiddleName(CommonFunctions.randomString(i * 10)));
+        }
+        return result;
     }
 
     private void save(Object data) {

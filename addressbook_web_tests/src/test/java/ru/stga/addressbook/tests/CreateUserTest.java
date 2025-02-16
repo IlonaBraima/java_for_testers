@@ -1,5 +1,6 @@
 package ru.stga.addressbook.tests;
 
+import ru.stga.addressbook.common.CommonFunctions;
 import ru.stga.addressbook.model.UserData;
 
 import org.junit.jupiter.api.Test;
@@ -11,8 +12,8 @@ public class CreateUserTest extends TestBase {
   @Test
   void canCreateContact(){
     var user = new UserData()
-            .withFirstName(randomString(10))
-            .withLastName(randomString(10))
+            .withFirstName(CommonFunctions.randomString(10))
+            .withLastName(CommonFunctions.randomString(10))
             .withPhoto(randomFile("src/test/resources/images"));
     app.users().createUser(user);
   }
