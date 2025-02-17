@@ -9,6 +9,7 @@ import ru.stga.addressbook.model.GroupData;
 import ru.stga.addressbook.model.UserData;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -77,7 +78,17 @@ public class Generator {
         if ("json".equals(format)) {
             ObjectMapper mapper = new ObjectMapper(); // create once, reuse
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
-            mapper.writeValue(new File(output), data);
+            var json = mapper.writeValueAsString(data);
+
+            //автоматический вызов закрытия файла
+
+            try(var writer = new FileWriter(output)) {
+                writer.write(json);
+            }
+            //принудительное закрытие файла, т.к. сам в Java он не закроется
+//            var writer = new FileWriter(output);
+//            writer.write(json);
+//            writer.close();
         } else {
             throw new IllegalArgumentException("Неизвестный формат данных" + format);
         }
