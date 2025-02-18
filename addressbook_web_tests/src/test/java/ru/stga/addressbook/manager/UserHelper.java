@@ -59,7 +59,7 @@ public class UserHelper extends HelperBase {
         enterText(By.name("lastname"), user.lastname());
         enterText(By.name("nickname"), user.nickname());
         enterText(By.name("title"), user.title());
-        attach(By.name("photo"), user.photo());
+        //attach(By.name("photo"), user.photo());
     }
 
 

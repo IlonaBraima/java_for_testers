@@ -1,30 +1,48 @@
 package ru.stga.addressbook.tests;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 import ru.stga.addressbook.common.CommonFunctions;
+import ru.stga.addressbook.model.GroupData;
 import ru.stga.addressbook.model.UserData;
 
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+import static ru.stga.addressbook.common.CommonFunctions.randomString;
+
 public class CreateUserTest extends TestBase {
 
- //Добавление photo
+            //Добавление photo
 
-  @Test
-  void canCreateContact(){
-    var user = new UserData()
-            .withFirstName(CommonFunctions.randomString(10))
-            .withLastName(CommonFunctions.randomString(10))
-            .withPhoto(randomFile("src/test/resources/images"));
-    app.users().createUser(user);
-  }
+//  @Test
+//  void canCreateContact(){
+//    var user = new UserData()
+//            .withFirstName(CommonFunctions.randomString(10))
+//            .withLastName(CommonFunctions.randomString(10))
+//            .withPhoto(randomFile("src/test/resources/images"));
+//    app.users().createUser(user);
+//  }
 
 
-// Цикл со счётчиком: многократное повторение похожих действийСтраница
-// Параметризованные тесты
-  //Сравнение списков
-  // Сортировка списковСтраница
-//  public static List<UserData> userProvider() {
-//    var result = new ArrayList<UserData>();
+          // Цикл со счётчиком: многократное повторение похожих действийСтраница
+          // Параметризованные тесты
+          //  Сравнение списков
+          //   Сортировка списков
+
+  public static List<UserData> userProvider() throws IOException {
+      var result = new ArrayList<UserData>();
 //    for (var firstname : List.of("", "firstName")) {
 //      for (var middlename : List.of("", "middleName")) {
 //        for (var lastname : List.of("", "lastName")) {
@@ -43,34 +61,60 @@ public class CreateUserTest extends TestBase {
 //        }
 //      }
 //    }
-//
+//        // генератор случайных названий
 //      for (int i = 0; i < 5; i++) {
-//        result.add(new UserData("", randomString(i * 10), randomString(i * 10), randomString(i * 10), randomString(i * 10), randomString(i * 10), randomString(i * 10), randomString(1)));
+//        result.add(new UserData(
+//                "",
+//                randomString(i * 10),
+//                randomString(i * 10),
+//                randomString(i * 10),
+//                randomString(i * 10),
+//                randomString(i * 10),
+//                randomString(i * 10),
+//                randomString(1)));
 //      }
 //      return result;
 //    }
-//
-//  @ParameterizedTest
-//  @MethodSource("userProvider")
-//
-//  public void CanCreateMultipleUsers(UserData user) {
-//    var oldUsers = app.users().getList();
-//    app.users().createUser(user);
-//    var newUsers = app.users().getList();
-//    Comparator<UserData> compareById = (a1, a2) -> {
-//      return Integer.compare(Integer.parseInt(a1.id()), Integer.parseInt(a2.id()));
-//    };
-//    newUsers.sort(compareById);
-//    var expectedList = new ArrayList<>(oldUsers);
-//    expectedList.add(user.withId(newUsers.get(newUsers.size() - 1)
-//                    .id())
-//            .withMiddleName("")
+
+      //чтение файлов 1-ый способ. Чтение файла целиком
+//        var json = Files.readString(Paths.get("users.json"));
+//        ObjectMapper mapper = new ObjectMapper();
+//        var value = mapper.readValue(json, new TypeReference<List<UserData>>() {
+//        });
+//        result.addAll(value);
+//        return result;
+//    }
+
+      //чтение файлов XML
+
+      ObjectMapper mapper = new XmlMapper();
+      var value = mapper.readValue(new File("users.xml"), new TypeReference<List<UserData>>() {
+      });
+      result.addAll(value);
+      return result;
+  }
+
+    @ParameterizedTest
+  @MethodSource("userProvider")
+
+  public void CanCreateMultipleUsers(UserData user) {
+    var oldUsers = app.users().getList();
+    app.users().createUser(user);
+    var newUsers = app.users().getList();
+    Comparator<UserData> compareById = (a1, a2) -> {
+      return Integer.compare(Integer.parseInt(a1.id()), Integer.parseInt(a2.id()));
+    };
+    newUsers.sort(compareById);
+    var expectedList = new ArrayList<>(oldUsers);
+    expectedList.add(user.withId(newUsers.get(newUsers.size() - 1)
+                    .id())
+            .withMiddleName("")
 //            .withNickName("")
 //            .withTitle("")
 //            .withEmail("")
-//    );
-//    expectedList.sort(compareById);
-//    Assertions.assertEquals(newUsers, expectedList);
-//  }
+    );
+    expectedList.sort(compareById);
+    Assertions.assertEquals(newUsers, expectedList);
+  }
 
 }
