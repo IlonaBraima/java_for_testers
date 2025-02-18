@@ -2,6 +2,7 @@ package ru.stga.addressbook.tests;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import ru.stga.addressbook.common.CommonFunctions;
 import ru.stga.addressbook.model.GroupData;
 import org.junit.jupiter.api.Assertions;
@@ -45,23 +46,23 @@ public class GroupCreationTest extends TestBase {
 
 
         //чтение файлов 2-ый способ. Читаем построчно
-        var json = "";
-        try (var reader = new FileReader("groups.json");
-        var breader = new BufferedReader(reader)
-        ){
-            var line = breader.readLine();
-            while (line != null) {
-                json = json + line;
-                line = breader.readLine();
-            }
-        }
+//        var json = "";
+//        try (var reader = new FileReader("groups.json");
+//        var breader = new BufferedReader(reader)
+//        ){
+//            var line = breader.readLine();
+//            while (line != null) {
+//                json = json + line;
+//                line = breader.readLine();
+//            }
+//        }
 
-        ObjectMapper mapper = new ObjectMapper();
-        var value = mapper.readValue(json, new TypeReference<List<GroupData>>() {
-        });
-        result.addAll(value);
-        return result;
-    }
+//        ObjectMapper mapper = new ObjectMapper();
+//        var value = mapper.readValue(json, new TypeReference<List<GroupData>>() {
+//        });
+//        result.addAll(value);
+//        return result;
+//    }
 
         //чтение файлов 1-ый способ. Чтение файла целиком
 //        var json = Files.readString(Paths.get("groups.json"));
@@ -72,6 +73,14 @@ public class GroupCreationTest extends TestBase {
 //        return result;
 //    }
 
+    //чтение файлов XML
+
+    ObjectMapper mapper = new XmlMapper();
+    var value = mapper.readValue(new File("groups.xml"), new TypeReference<List<GroupData>>() {
+    });
+        result.addAll(value);
+        return result;
+}
         //reader отрабатывает библиотека jekson
 //        ObjectMapper mapper = new ObjectMapper();
 //        var value = mapper.readValue(new File("groups.json"), new TypeReference<List<GroupData>>() {});
