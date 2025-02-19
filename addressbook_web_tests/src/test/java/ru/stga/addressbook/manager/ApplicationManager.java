@@ -2,6 +2,8 @@ package ru.stga.addressbook.manager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.Properties;
+
 
 public class ApplicationManager {
 
@@ -13,8 +15,11 @@ public class ApplicationManager {
 
     private UserHelper users;
 
+    private Properties properties;
 
-    public void init(String browser) {
+
+    public void init(String browser, Properties properties) {
+        this.properties = properties;
         if (driver == null) {
             if ("chrome".equals(browser)){
                 driver = new ChromeDriver();
@@ -24,9 +29,9 @@ public class ApplicationManager {
                 throw new IllegalArgumentException(String.format("Unknown browser %s", browser));
             }
             Runtime.getRuntime().addShutdownHook(new Thread(driver::quit));
-            driver.get("http://localhost/addressbook/");
+            driver.get(properties.getProperty("web.baseUrl"));
             driver.manage().window().setSize(new Dimension(970, 668));
-            session().login("admin", "secret");
+            session().login(properties.getProperty("web.username"), properties.getProperty("web.password"));
         }
     }
 
