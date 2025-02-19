@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/UserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/UserHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/CreateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/CreateUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/generator/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/generator/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/users.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +104,7 @@
     "Gradle.UserModificationTests.canModifyUser.executor": "Run",
     "Gradle.UserModificationTests.executor": "Run",
     "Gradle.addressbook_web_tests [:org.example.Main.main()].executor": "Run",
-    "Gradle.addressbook_web_tests [:ru.stga.addressbook.generator.Generator.main()].executor": "Run",
+    "Gradle.addressbook_web_tests [:ru.stga.addressbook.generator.Generator.main()].executor": "Debug",
     "Gradle.addressbook_web_tests [dependencies].executor": "Run",
     "Gradle.addressbook_web_tests [test].executor": "Run",
     "Gradle.sandbox [:Geometry.main()].executor": "Run",
@@ -168,7 +168,7 @@
       <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests\src\test\java\ru\stga\addressbook\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CreateUserTest (1)">
+  <component name="RunManager" selected="Application.Generator">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stga.addressbook.generator.Generator" />
       <module name="addressbook_web_tests.test" />
@@ -435,6 +435,11 @@
           <url>file://$PROJECT_DIR$/addressbook_web_tests/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/generator/Generator.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />

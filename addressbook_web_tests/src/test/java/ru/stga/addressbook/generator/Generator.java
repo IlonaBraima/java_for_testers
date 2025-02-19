@@ -82,6 +82,7 @@ public class Generator {
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
             var json = mapper.writeValueAsString(data);
 
+
             //автоматический вызов закрытия файла
 
             try(var writer = new FileWriter(output)) {
@@ -91,9 +92,13 @@ public class Generator {
 //            var writer = new FileWriter(output);
 //            writer.write(json);
 //            writer.close();
+            return;
+
         } if ("yaml".equals(format)) {
             var mapper = new YAMLMapper();
             mapper.writeValue(new File(output), data);
+            return;
+
         } if ("xml".equals(format)) {
             var mapper = new XmlMapper();
             mapper.writeValue(new File(output), data);
