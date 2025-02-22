@@ -7,7 +7,8 @@
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/UserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/UserHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +90,7 @@
     "Gradle.GroupCreationTest.groupcreate.executor": "Run",
     "Gradle.GroupCreationTest.test.executor": "Run",
     "Gradle.GroupModificationTests.canModifyGroup.executor": "Run",
-    "Gradle.GroupModificationTests.executor": "Run",
+    "Gradle.GroupModificationTests.executor": "Debug",
     "Gradle.RemoveUserTest (1).executor": "Run",
     "Gradle.RemoveUserTest.CanRemoveUser (1).executor": "Debug",
     "Gradle.RemoveUserTest.CanRemoveUser.executor": "Debug",
@@ -150,10 +151,10 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/anoli/java_for_testers/addressbook_web_tests/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "settings.editor.splitter.proportion": "0.2556008",
     "vue.rearranger.settings.migration": "true"
   }
@@ -169,22 +170,7 @@
       <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests\src\test\java\ru\stga\addressbook\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GroupModificationTests.canModifyGroup">
-    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stga.addressbook.generator.Generator" />
-      <module name="addressbook_web_tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="--type users --output users.xml --format xml --count 3" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook_web_tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stga.addressbook.generator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.UserModificationTests">
     <configuration name="Hello" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hello" />
       <module name="sandbox.main" />
@@ -216,100 +202,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DeleteGroupTest.canRemoveAllGroupOnce" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      =======
-      <configuration name="UserModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-        &gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main
-        <ExternalSystemSettings>
-          <option name="executionName" />
-          <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-          <option name="externalSystemIdString" value="GRADLE" />
-          HEAD
-          <option name="scriptParameters" value="" />
-          =======
-          <option name="scriptParameters" value="--scan" />
-          &gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main
-          <option name="taskDescriptions">
-            <list />
-          </option>
-          <option name="taskNames">
-            <list>
-              <option value=":test" />
-              <option value="--tests" />
-              HEAD
-              <option value="&quot;tests.DeleteGroupTest.canRemoveAllGroupOnce&quot;" />
-              =======
-              <option value="&quot;tests.UserModificationTests&quot;" />
-              &gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main
-            </list>
-          </option>
-          <option name="vmOptions" />
-        </ExternalSystemSettings>
-        <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-        <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-        <DebugAllEnabled>false</DebugAllEnabled>
-        <RunAsTest>true</RunAsTest>
-        <method v="2" />
-        HEAD
-      </configuration>
-      <configuration name="GroupCreationTest.CanCreateMultipleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-        <ExternalSystemSettings>
-          <option name="executionName" />
-          <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-          <option name="externalSystemIdString" value="GRADLE" />
-          <option name="scriptParameters" value="" />
-          <option name="taskDescriptions">
-            <list />
-          </option>
-          <option name="taskNames">
-            <list>
-              <option value=":test" />
-              <option value="--tests" />
-              <option value="&quot;tests.GroupCreationTest.CanCreateMultipleGroups&quot;" />
-            </list>
-          </option>
-          <option name="vmOptions" />
-        </ExternalSystemSettings>
-        <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-        <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-        <DebugAllEnabled>false</DebugAllEnabled>
-        <RunAsTest>true</RunAsTest>
-        <method v="2" />
-      </configuration>
-      <configuration name="TriangleTest.canCalculateArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-        <module name="sandbox.test" />
-        <extension name="coverage">
-          <pattern>
-            <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
-            <option name="ENABLED" value="true" />
-          </pattern>
-        </extension>
-        <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
-        <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTest" />
-        <option name="METHOD_NAME" value="canCalculateArea" />
-        <option name="TEST_OBJECT" value="method" />
-        <method v="2">
-          <option name="Make" enabled="true" />
-        </method>
-      </configuration>
-      <configuration name="TriangleTest.canCalculatePerimeter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-        <module name="sandbox.test" />
-        <extension name="coverage">
-          <pattern>
-            <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
-            <option name="ENABLED" value="true" />
-          </pattern>
-        </extension>
-        <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
-        <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTest" />
-        <option name="METHOD_NAME" value="canCalculatePerimeter" />
-        <option name="TEST_OBJECT" value="method" />
-        <method v="2">
-          <option name="Make" enabled="true" />
-        </method>
-      </configuration>
-      =======
-    </configuration>
     <configuration name="GroupCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -334,7 +226,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTest.CanCreateMultipleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -347,7 +239,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.GroupCreationTest.CanCreateMultipleGroups&quot;" />
+            <option value="&quot;ru.stga.addressbook.tests.GroupModificationTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -382,20 +274,45 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="UserModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stga.addressbook.tests.UserModificationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Hello" />
-      <item itemvalue="Application.Generator" />
-      <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
+      <item itemvalue="Gradle.GroupModificationTests" />
+      <item itemvalue="Gradle.UserModificationTests" />
       <item itemvalue="Gradle.CreateUserTest (1)" />
       <item itemvalue="Gradle.GroupCreationTest" />
-      <item itemvalue="Gradle.GroupCreationTest.CanCreateMultipleGroups" />
+      <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UserModificationTests" />
+        <item itemvalue="Gradle.GroupModificationTests" />
         <item itemvalue="Gradle.GroupModificationTests.canModifyGroup" />
         <item itemvalue="Gradle.CreateUserTest (1)" />
         <item itemvalue="Gradle.GroupCreationTest" />
-        <item itemvalue="Application.Generator" />
       </list>
     </recent_temporary>
   </component>
@@ -437,11 +354,6 @@
           <url>file://$PROJECT_DIR$/addressbook_web_tests/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/generator/Generator.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />

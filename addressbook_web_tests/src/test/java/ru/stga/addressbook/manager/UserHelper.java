@@ -103,7 +103,7 @@ public class UserHelper extends HelperBase {
     private void selectDropdownValue(By locator, String value) {
         WebElement dropdown = manager.driver.findElement(locator);
         dropdown.findElement(By.xpath("//option[. = '" + value + "']")).click();
-  }
+    }
 
     private void removedAllUsers() {
         manager.driver.findElement(By.id("MassCB")).click();
@@ -123,17 +123,17 @@ public class UserHelper extends HelperBase {
     }
 
     private void removeSelectedUser() {
-    manager.driver.findElement(By.xpath("/html/body/div/div[4]/form[2]/div[2]/input")).click(); }
+        manager.driver.findElement(By.xpath("/html/body/div/div[4]/form[2]/div[2]/input")).click(); }
 
     public void openAddNewUserPage() {
         if (!manager.isElementPresent(By.name("submit"))) {
-            manager.driver.get("http://localhost/addressbook/group.php");
+            manager.driver.get("web.baseGroupUrl");
         }
     }
 
     public void openHomePage() {
         if (!manager.isElementPresent(By.id("MassCB"))) {
-            manager.driver.get("http://localhost/addressbook/");
+            manager.driver.get("web.baseUrl");
         }
     }
 
@@ -156,8 +156,8 @@ public class UserHelper extends HelperBase {
     }
 
     private void submitUserModify() {
-    click(By.xpath("/html/body/div/div[4]/form[1]/input[2]"));
-}
+        click(By.xpath("/html/body/div/div[4]/form[1]/input[2]"));
+    }
 
     public void SelectedUser(UserData user) {
         click(By.cssSelector(String.format("input[value='%s']", user.id())));
@@ -177,7 +177,7 @@ public class UserHelper extends HelperBase {
         var trs = manager.driver.findElements(By.name("entry"));
         for (var tr : trs) {
             var firstname = tr.findElement(By.cssSelector("td:nth-child(3)")).getText();
-                    //(By.xpath(".//td[3]")).getText();
+            //(By.xpath(".//td[3]")).getText();
             var lastname = tr.findElement(By.cssSelector("td:nth-child(2)")).getText();
             var checkbox = tr.findElement(By.name("selected[]"));
             var id = checkbox.getAttribute("value");
