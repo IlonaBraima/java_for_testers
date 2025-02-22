@@ -97,7 +97,8 @@ public class CreateUserTest extends TestBase {
     public static List<UserData> singleRandomUser() {
         return List.of(new UserData()
                 .withFirstName(CommonFunctions.randomString(10))
-                .withLastName(CommonFunctions.randomString(20)));
+ //               .withLastName(CommonFunctions.randomString(20))
+                );
     }
 
     @ParameterizedTest

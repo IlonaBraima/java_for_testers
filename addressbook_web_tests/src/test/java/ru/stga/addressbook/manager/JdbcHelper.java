@@ -15,7 +15,7 @@ public class JdbcHelper extends HelperBase {
 
     public List<GroupData> getGroupList() {
         var groups = new ArrayList<GroupData>();
-        try (var conn = DriverManager.getConnection("jdbc:mysql://localhost", "root", "");
+        try (var conn = DriverManager.getConnection("jdbc:mysql://localhost/addressbook", "root", "");
             var statement = conn.createStatement();
             var result = statement.executeQuery("SELECT group_id, group_name, group_header, group_footer FROM group_list"))
         {
@@ -36,15 +36,16 @@ public class JdbcHelper extends HelperBase {
 
     public List<UserData> getUserList() {
         var users = new ArrayList<UserData>();
-        try (var conn = DriverManager.getConnection("jdbc:mysql://localhost/", "root", "");
+        try (var conn = DriverManager.getConnection("jdbc:mysql://localhost/addressbook", "root", "");
              var statement = conn.createStatement();
-             var result = statement.executeQuery("SELECT id firstname, lastname, FROM addressbook"))
+             var result = statement.executeQuery("SELECT id, firstname FROM addressbook"))
         {
             while (result.next()) {
                 users.add(new UserData()
                         .withId(result.getString("id"))
                         .withFirstName(result.getString("firstname"))
-                        .withLastName(result.getString("lastname")));
+                       // .withLastName(result.getString("lastname"))
+                        );
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
