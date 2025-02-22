@@ -15,6 +15,8 @@ public class ApplicationManager {
 
     private UserHelper users;
 
+    private JdbcHelper jdbc;
+
     private Properties properties;
 
 
@@ -54,6 +56,13 @@ public class ApplicationManager {
             users = new UserHelper (this);
         }
         return users;
+    }
+
+    public JdbcHelper jdbc() {
+        if (jdbc == null) {
+            jdbc = new JdbcHelper (this);
+        }
+        return jdbc;
     }
 
     protected boolean isElementPresent(By locator) {
