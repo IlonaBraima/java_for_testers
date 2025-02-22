@@ -94,25 +94,28 @@ public class CreateUserTest extends TestBase {
       return result;
   }
 
-    @ParameterizedTest
-  @MethodSource("userProvider")
+    public static List<UserData> singleRandomUser() {
+        return List.of(new UserData()
+                .withFirstName(CommonFunctions.randomString(10))
+                .withLastName(CommonFunctions.randomString(20)));
+    }
 
-  public void CanCreateMultipleUsers(UserData user) {
-    var oldUsers = app.users().getList();
+    @ParameterizedTest
+  @MethodSource("singleRandomUser")
+
+  public void CanCreateUsers(UserData user) {
+    var oldUsers = app.jdbc().getUserList();
     app.users().createUser(user);
-    var newUsers = app.users().getList();
+    var newUsers = app.jdbc().getUserList();
     Comparator<UserData> compareById = (a1, a2) -> {
       return Integer.compare(Integer.parseInt(a1.id()), Integer.parseInt(a2.id()));
     };
     newUsers.sort(compareById);
+    var maxId = newUsers.get(newUsers.size() - 1).id();
+
+
     var expectedList = new ArrayList<>(oldUsers);
-    expectedList.add(user.withId(newUsers.get(newUsers.size() - 1)
-                    .id())
-            .withMiddleName("")
-//            .withNickName("")
-//            .withTitle("")
-//            .withEmail("")
-    );
+    expectedList.add(user.withId(maxId));
     expectedList.sort(compareById);
     Assertions.assertEquals(newUsers, expectedList);
   }
