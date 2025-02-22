@@ -127,13 +127,13 @@ public class UserHelper extends HelperBase {
 
     public void openAddNewUserPage() {
         if (!manager.isElementPresent(By.name("submit"))) {
-            manager.driver.get("web.baseGroupUrl");
+            manager.driver.get("http://localhost/addressbook/group.php");
         }
     }
 
     public void openHomePage() {
         if (!manager.isElementPresent(By.id("MassCB"))) {
-            manager.driver.get("web.baseUrl");
+            manager.driver.get("http://localhost/addressbook/");
         }
     }
 
