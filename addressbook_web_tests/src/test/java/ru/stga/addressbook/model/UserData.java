@@ -16,6 +16,7 @@ public record UserData(
         this("", "", "", "", "", "", "", "");
     }
 
+
     public UserData withId(String id) {
         return new UserData(id, this.firstname, this.middlename, this.lastname, this.nickname, this.title, this.email, this.photo);
     }
