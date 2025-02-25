@@ -40,18 +40,38 @@ public class HibernateHelper extends HelperBase {
         return new GroupData("" + record.id, record.name, record.header, record.footer);
     }
 
-    public List<GroupData> getGroupList() {
-        return convertList(sessionFactory.fromSession(session -> {
-            return session.createQuery("from GroupRecord", GroupRecord.class).list();
-        }));
+    private static GroupRecord convert(GroupData data) {
+        var id = data.id();
+        if("".equals(id)) {
+            id = "0";
+        }
+        return new GroupRecord(Integer.parseInt(id), data.name(), data.header(), data.footer());
     }
 
     static List<UserData> convertUsList(List<UserRecord> records) {
         List<UserData> result = new ArrayList<>();
         for (var record : records) {
-            result.add(new UserData("" + record.id, record.firstname, record.middlename, record.lastname, record.nickname, record.title, record.email, record.photo ));
+            result.add(convert(record));
         }
         return result;
+    }
+
+    private static UserData convert(UserRecord record) {
+        return new UserData("" + record.id, record.firstname, record.middlename, record.lastname, record.nickname, record.title, record.email, record.photo);
+    }
+
+    private static UserRecord convert(UserData data) {
+        var id = data.id();
+        if("".equals(id)) {
+            id = "0";
+        }
+        return new UserRecord(Integer.parseInt(id), data.firstname(), data.middlename(), data.lastname(), data.nickname(), data.title(), data.email(), data.photo());
+    }
+
+    public List<GroupData> getGroupList() {
+        return convertList(sessionFactory.fromSession(session -> {
+            return session.createQuery("from GroupRecord", GroupRecord.class).list();
+        }));
     }
 
     public List<UserData> getUserList() {
@@ -60,4 +80,34 @@ public class HibernateHelper extends HelperBase {
         }));
     }
 
+
+    public long getGroupCount() {
+        return sessionFactory.fromSession(session -> {
+            return session.createQuery("select count (*) from GroupRecord", Long.class).getSingleResult();
+        });
+    }
+
+    public long getUserCount() {
+        return sessionFactory.fromSession(session -> {
+            return session.createQuery("select count (*) from UserRecord", Long.class).getSingleResult();
+        });
+    }
+
+    public void createGroup(GroupData groupData) {
+        sessionFactory.inSession(session -> {
+            session.getTransaction().begin();
+            session.persist(convert(groupData));
+            session.getTransaction().commit();
+        });
+
+    }
+
+
+    public void createUser(UserData userData) {
+        sessionFactory.inSession(session -> {
+            session.getTransaction().begin();
+            session.persist(convert(userData));
+            session.getTransaction().commit();
+        });
+    }
 }

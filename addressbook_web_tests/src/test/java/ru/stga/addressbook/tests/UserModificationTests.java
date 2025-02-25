@@ -12,15 +12,15 @@ public class UserModificationTests extends TestBase {
 
     @Test
     void canModifyUser() {
-        if (app.users().getCount() == 0) {
-            app.users().createUser(new UserData("", "", "", "", "", "", "", ""));
+        if (app.hbm().getUserCount() == 0) {
+            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", ""));
         }
-        var oldUsers = app.users().getList();
+        var oldUsers = app.hbm().getUserList();
         var rnd = new Random();
         var index = rnd.nextInt(oldUsers.size());
         var testData = new UserData().withFirstName("modified name");
         app.users().modifyUser(oldUsers.get(index), testData);
-        var newUsers = app.users().getList();
+        var newUsers = app.hbm().getUserList();
         var expectedList = new ArrayList<>(oldUsers);
         expectedList.set(index, testData.withId(oldUsers.get(index).id()));
         Comparator<UserData> CompareById = (a1, a2) -> {

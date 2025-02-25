@@ -12,15 +12,15 @@ public class RemoveUserTest extends TestBase {
 
     @Test
     public void CanRemoveUser() {
-        app.users().openHomePage();
-        if (app.users().getCount() == 0) {
-            app.users().createUser(new UserData());
+        //app.users().openHomePage();
+        if (app.hbm().getUserCount() == 0) {
+            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", ""));
         }
-        var oldUsers = app.users().getList();
+        var oldUsers = app.hbm().getUserList();
         var rnd = new Random();
         var index = rnd.nextInt(oldUsers.size());
         app.users().removeUser(oldUsers.get(index));
-        var newUsers = app.users().getList();
+        var newUsers = app.hbm().getUserList();
         var expectedList = new ArrayList<>(oldUsers);
         expectedList.remove(index);
         Assertions.assertEquals(newUsers, expectedList);
