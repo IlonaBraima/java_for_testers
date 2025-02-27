@@ -1,5 +1,7 @@
 package ru.stga.addressbook.manager;
 
+import org.openqa.selenium.support.ui.Select;
+import ru.stga.addressbook.model.GroupData;
 import ru.stga.addressbook.model.UserData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -20,6 +22,21 @@ public class UserHelper extends HelperBase {
         fillPersonalDetails(user);
         submitUserCreation();
         openHomePage();
+    }
+
+    public void create(UserData user, GroupData group) {
+        openAddNewUserPage();
+        initNewNameCreation();
+        //fillUserForm(user);
+        fillPersonalDetails(user);
+        selectGroup(group);
+        submitUserCreation();
+        openHomePage();
+    }
+
+    private void selectGroup(GroupData group) {
+        new Select(manager.driver.findElement(By.name("new_group"))).selectByValue(group.id());
+
     }
 
     public void removeUser(UserData user) {

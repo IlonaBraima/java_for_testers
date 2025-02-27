@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_antlr4_runtime_4_13_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_antlr4_runtime_4_13_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/GroupHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/HibernateHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/HibernateHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/UserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/UserHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/hdm/GroupRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/hdm/GroupRecord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/hdm/UserRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/hdm/UserRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/CreateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/CreateUserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/DeleteGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/DeleteGroupTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/GroupModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/GroupModificationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/RemoveUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/RemoveUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/UserModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/UserModificationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +79,7 @@
     "Gradle.Build addressbook_web_tests.executor": "Run",
     "Gradle.CreateUserTest (1).executor": "Run",
     "Gradle.CreateUserTest.CanCreateUsers.executor": "Run",
+    "Gradle.CreateUserTest.canCreateContactInGroup.executor": "Run",
     "Gradle.CreateUserTest.createUser.executor": "Run",
     "Gradle.CreateUserTest.executor": "Run",
     "Gradle.DeleteAllUsersTest.CanDeleteUsers.executor": "Run",
@@ -159,7 +161,7 @@
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "settings.editor.splitter.proportion": "0.2556008",
     "vue.rearranger.settings.migration": "true"
   }
@@ -175,13 +177,61 @@
       <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests\src\test\java\ru\stga\addressbook\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RemoveUserTest">
+  <component name="RunManager" selected="Gradle.CreateUserTest.canCreateContactInGroup">
     <configuration name="Hello" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hello" />
       <module name="sandbox.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="CreateUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stga.addressbook.tests.CreateUserTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CreateUserTest.canCreateContactInGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stga.addressbook.tests.CreateUserTest.canCreateContactInGroup&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="DeleteGroupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -231,54 +281,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DeleteGroupTest.deleteGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stga.addressbook.tests.DeleteGroupTest.deleteGroup&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="RemoveUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stga.addressbook.tests.RemoveUserTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="RemoveUserTest.CanRemoveUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -305,18 +307,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Hello" />
+      <item itemvalue="Gradle.CreateUserTest" />
+      <item itemvalue="Gradle.CreateUserTest.canCreateContactInGroup" />
+      <item itemvalue="Gradle.RemoveUserTest.CanRemoveUser" />
       <item itemvalue="Gradle.DeleteGroupTest" />
       <item itemvalue="Gradle.DeleteGroupTest.canRemoveAllGroupOnce" />
-      <item itemvalue="Gradle.DeleteGroupTest.deleteGroup" />
-      <item itemvalue="Gradle.RemoveUserTest" />
-      <item itemvalue="Gradle.RemoveUserTest.CanRemoveUser" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RemoveUserTest" />
-        <item itemvalue="Gradle.DeleteGroupTest" />
-        <item itemvalue="Gradle.DeleteGroupTest.deleteGroup" />
+        <item itemvalue="Gradle.CreateUserTest.canCreateContactInGroup" />
         <item itemvalue="Gradle.DeleteGroupTest.canRemoveAllGroupOnce" />
+        <item itemvalue="Gradle.DeleteGroupTest" />
+        <item itemvalue="Gradle.CreateUserTest" />
         <item itemvalue="Gradle.RemoveUserTest.CanRemoveUser" />
       </list>
     </recent_temporary>
@@ -367,6 +369,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="org.opentest4j.AssertionFailedError" package="org.opentest4j" />
           <option name="timeStamp" value="30" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.openqa.selenium.remote.NoSuchDriverException" package="org.openqa.selenium.remote" />
+          <option name="timeStamp" value="31" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

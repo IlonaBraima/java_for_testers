@@ -3,6 +3,7 @@ package ru.stga.addressbook.manager;
 import ru.stga.addressbook.model.GroupData;
 import org.openqa.selenium.By;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +18,10 @@ public class GroupHelper extends HelperBase {
             click(By.linkText("groups"));
         }
     }
+
+    public void openGroupPageWithRefresh() {
+            click(By.linkText("groups"));
+        }
 
     public void createGroup(GroupData group) {
         openGroupPage();
@@ -82,9 +87,10 @@ public class GroupHelper extends HelperBase {
     }
 
     public void removeAllGroups() {
-        openGroupPage();
+        openGroupPageWithRefresh();
         selectAllGroups();
         removeSelectedGroups();
+        returnToGroupPage();
     }
 
     private void selectAllGroups() {

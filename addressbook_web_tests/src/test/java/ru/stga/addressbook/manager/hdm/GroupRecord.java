@@ -1,11 +1,9 @@
 package ru.stga.addressbook.manager.hdm;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "group_list")
@@ -24,7 +22,12 @@ public class GroupRecord {
     @Column(name = "group_footer")
     public String footer;
 
-    public Date deprecated = new Date();
+    //public String deprecated = "0000-00-00 00:00:00";
+    @ManyToMany
+    @JoinTable(name = "address_in_groups",
+            joinColumns = @JoinColumn(name = "group_id"),
+    inverseJoinColumns = @JoinColumn(name = "id"))
+    public List<UserRecord> users;
 
     public GroupRecord() {
     }

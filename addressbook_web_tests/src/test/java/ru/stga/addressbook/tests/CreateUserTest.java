@@ -26,23 +26,40 @@ public class CreateUserTest extends TestBase {
 
             //Добавление photo
 
-//  @Test
-//  void canCreateContact(){
-//    var user = new UserData()
-//            .withFirstName(CommonFunctions.randomString(10))
-//            .withLastName(CommonFunctions.randomString(10))
-//            .withPhoto(randomFile("src/test/resources/images"));
-//    app.users().createUser(user);
-//  }
+  @Test
+  void canCreateContact(){
+    var user = new UserData()
+            .withFirstName(CommonFunctions.randomString(10))
+            .withLastName(CommonFunctions.randomString(10))
+            .withPhoto(randomFile("src/test/resources/images"));
+    app.users().createUser(user);
+  }
 
+    @Test
+    void canCreateContactInGroup(){
+        var user = new UserData()
+                .withFirstName(CommonFunctions.randomString(10))
+                .withLastName(CommonFunctions.randomString(10))
+                .withPhoto(randomFile("src/test/resources/images"));
+        if (app.hbm().getGroupCount() == 0) {
+            app.hbm().createGroup(new GroupData("", "group name", "group header", "group footer"));
+        }
+        var group = app.hbm().getGroupList().get(0);
 
+        var oldRelated = app.hbm().getUsersInGroup(group);
+        app.users().create(user, group);
+        var newRelated = app.hbm().getUsersInGroup(group);
+        Assertions.assertEquals(oldRelated.size() + 1, newRelated.size());
+    }
+
+}
           // Цикл со счётчиком: многократное повторение похожих действийСтраница
           // Параметризованные тесты
           //  Сравнение списков
           //   Сортировка списков
 
-  public static List<UserData> userProvider() throws IOException {
-      var result = new ArrayList<UserData>();
+//  public static List<UserData> userProvider() throws IOException {
+//      var result = new ArrayList<UserData>();
 //    for (var firstname : List.of("", "firstName")) {
 //      for (var middlename : List.of("", "middleName")) {
 //        for (var lastname : List.of("", "lastName")) {
@@ -86,39 +103,38 @@ public class CreateUserTest extends TestBase {
 //    }
 
       //чтение файлов XML
-
-      ObjectMapper mapper = new XmlMapper();
-      var value = mapper.readValue(new File("users.xml"), new TypeReference<List<UserData>>() {
-      });
-      result.addAll(value);
-      return result;
-  }
-
-    public static List<UserData> singleRandomUser() {
-        return List.of(new UserData()
-                .withFirstName(CommonFunctions.randomString(10))
- //               .withLastName(CommonFunctions.randomString(20))
-                );
-    }
-
-    @ParameterizedTest
-  @MethodSource("singleRandomUser")
-
-  public void CanCreateUsers(UserData user) {
-    var oldUsers = app.jdbc().getUserList();
-    app.users().createUser(user);
-    var newUsers = app.jdbc().getUserList();
-    Comparator<UserData> compareById = (a1, a2) -> {
-      return Integer.compare(Integer.parseInt(a1.id()), Integer.parseInt(a2.id()));
-    };
-    newUsers.sort(compareById);
-    var maxId = newUsers.get(newUsers.size() - 1).id();
-
-
-    var expectedList = new ArrayList<>(oldUsers);
-    expectedList.add(user.withId(maxId));
-    expectedList.sort(compareById);
-    Assertions.assertEquals(newUsers, expectedList);
-  }
-
-}
+//
+//      ObjectMapper mapper = new XmlMapper();
+//      var value = mapper.readValue(new File("users.xml"), new TypeReference<List<UserData>>() {
+//      });
+//      result.addAll(value);
+//      return result;
+//
+//
+//    public static List<UserData> singleRandomUser() {
+//        return List.of(new UserData()
+//                .withFirstName(CommonFunctions.randomString(10))
+// //               .withLastName(CommonFunctions.randomString(20))
+//                );
+//    }
+//
+//    @ParameterizedTest
+//  @MethodSource("singleRandomUser")
+//
+//  public void CanCreateUsers(UserData user) {
+//    var oldUsers = app.jdbc().getUserList();
+//    app.users().createUser(user);
+//    var newUsers = app.jdbc().getUserList();
+//    Comparator<UserData> compareById = (a1, a2) -> {
+//      return Integer.compare(Integer.parseInt(a1.id()), Integer.parseInt(a2.id()));
+//    };
+//    newUsers.sort(compareById);
+//    var maxId = newUsers.get(newUsers.size() - 1).id();
+//
+//
+//    var expectedList = new ArrayList<>(oldUsers);
+//    expectedList.add(user.withId(maxId));
+//    expectedList.sort(compareById);
+//    Assertions.assertEquals(newUsers, expectedList);
+// }
+//
