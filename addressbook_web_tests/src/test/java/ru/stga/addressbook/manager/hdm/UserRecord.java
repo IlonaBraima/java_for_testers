@@ -19,16 +19,6 @@ public class UserRecord {
     public String email;
     public String photo;
 
-//    public Date company = new Date();
-//    //public Date address = new Date();
-//    public Date home = new Date();
-//    public Date mobile = new Date();
-//    public Date work = new Date();
-//    public Date fax = new Date();
-//    public Date email2 = new Date();
-//    public Date email3 = new Date();
-//    public Date homepage = new Date();
-
     public UserRecord() {
     }
 

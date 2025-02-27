@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.Random;
+
+import org.junit.jupiter.api.AfterEach;
 import ru.stga.addressbook.manager.ApplicationManager;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -20,6 +22,11 @@ public class TestBase {
             app = new ApplicationManager();
             app.init(System.getProperty("browser","chrome"), properties);
         }
+    }
+
+    @AfterEach
+    void chechDatabaseConsistency() {
+        app.jdbc().checkConsistency();
     }
 
     public static String randomFile(String dir) {
