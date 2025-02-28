@@ -46,6 +46,13 @@ public class UserHelper extends HelperBase {
         openHomePage();
     }
 
+    public void removeContactFromGroup(UserData user) {
+        openHomePage();
+        SelectedUser(user);
+        removeSelectedUser();
+        openHomePage();
+    }
+
     public void deleteAllUsers() {
         openHomePage();
         removeUser(null);
@@ -63,9 +70,9 @@ public class UserHelper extends HelperBase {
     public void modifyUser(UserData user, UserData modifiedUser) {
         openHomePage();
         //SelectedUser(user);
-        initUserModification();
+        initUserModification(user);
         submitUserModify();
-        fillPersonalDetails(user);
+        fillPersonalDetails(modifiedUser);
         submitUserModification();
         returnToHomePage();
     }
@@ -180,12 +187,8 @@ public class UserHelper extends HelperBase {
         click(By.cssSelector(String.format("input[value='%s']", user.id())));
     }
 
-    public void initUserModification() {
-        click(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[3]/td[7]/a"));
-        //click(By.xpath("/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[8]/a"));
-
-        ///driver.findElements(By.className("fdTableSortTrigger")); ищет элементы только по одному классу.
-        //driver.findElements(By.cssSelector(".fdTableSortTrigger")); более гибкий, можно комбинировать с другими селекторами (например, div.fdTableSortTrigger).
+    public void initUserModification(UserData user) {
+        click(By.xpath(String.format("//td[@class='center']/a[@href='view.php?id=%s']", user.id())));
     }
 
     public List<UserData> getList() {
