@@ -5,17 +5,21 @@ import ru.stga.geometry.figures.Square;
 import ru.stga.geometry.figures.Triangle;
 
 import java.util.List;
+import java.util.Random;
 import java.util.function.Consumer;
+import java.util.function.Supplier;
+import java.util.stream.Stream;
 
 public class Geometry {
 
     public static void main(String[] args) {
-        var squares = List.of(new Square(7.), new Square(5.), new Square(3.));
-//        for (Square square : squares) {
-//            Square.printSquareArea(square);
-//        }
-                squares.forEach(Square::printSquareArea);
+        Supplier<Square> randomSquare = () -> new Square(new Random().nextDouble (100.));
+        var squares = Stream.generate(randomSquare).limit(5);
 
+                squares.peek(Square::printSquareArea).forEach(Square::printSquarePerimeter);
+
+    }
+}
 
         //public static void main(String[] args) {
 //            var rectangles = List.of(new Rectangle(3., 5), new Rectangle(5., 9));
@@ -29,6 +33,4 @@ public class Geometry {
 //        Triangle.printTriangleArea(new Triangle(3., 4., 5.));
 //        Triangle.printTriangleArea(new Triangle(5., 6., 7.));
 
-    }
 
-}
