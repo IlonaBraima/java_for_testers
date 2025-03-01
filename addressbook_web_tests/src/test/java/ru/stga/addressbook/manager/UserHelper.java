@@ -86,7 +86,6 @@ public class UserHelper extends HelperBase {
         //attach(By.name("photo"), user.photo());
     }
 
-
     private void fillCompanyDetails() {
         enterText(By.name("company"), "Company");
         enterText(By.name("address"), "Address");
