@@ -19,6 +19,9 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
+import java.util.function.Supplier;
+import java.util.stream.Stream;
 
 import static ru.stga.addressbook.common.CommonFunctions.randomString;
 
@@ -92,17 +95,6 @@ public class CreateUserTest extends TestBase {
 //      }
 //      return result;
 //    }
-
-      //чтение файлов 1-ый способ. Чтение файла целиком
-//        var json = Files.readString(Paths.get("users.json"));
-//        ObjectMapper mapper = new ObjectMapper();
-//        var value = mapper.readValue(json, new TypeReference<List<UserData>>() {
-//        });
-//        result.addAll(value);
-//        return result;
-//    }
-
-      //чтение файлов XML
 //
 //      ObjectMapper mapper = new XmlMapper();
 //      var value = mapper.readValue(new File("users.xml"), new TypeReference<List<UserData>>() {
@@ -111,30 +103,27 @@ public class CreateUserTest extends TestBase {
 //      return result;
 //
 //
-//    public static List<UserData> singleRandomUser() {
-//        return List.of(new UserData()
+//    public static Stream<UserData> randomUsers() {
+//        Supplier<UserData> randomUser = () -> new UserData()
 //                .withFirstName(CommonFunctions.randomString(10))
-// //               .withLastName(CommonFunctions.randomString(20))
-//                );
+// //             .withLastName(CommonFunctions.randomString(20))
+//        return Stream.generate(randomUser).limit(1);
 //    }
 //
 //    @ParameterizedTest
-//  @MethodSource("singleRandomUser")
+//    @MethodSource("randomUsers")
 //
 //  public void CanCreateUsers(UserData user) {
 //    var oldUsers = app.jdbc().getUserList();
 //    app.users().createUser(user);
 //    var newUsers = app.jdbc().getUserList();
-//    Comparator<UserData> compareById = (a1, a2) -> {
-//      return Integer.compare(Integer.parseInt(a1.id()), Integer.parseInt(a2.id()));
-//    };
-//    newUsers.sort(compareById);
-//    var maxId = newUsers.get(newUsers.size() - 1).id();
+//
+//    var extraUsers = newUsers.stream().filter(g -> ! oldUsers.contains(g)).toList();
+//    var newId = extraUsers.get(0).id();
 //
 //
 //    var expectedList = new ArrayList<>(oldUsers);
-//    expectedList.add(user.withId(maxId));
-//    expectedList.sort(compareById);
-//    Assertions.assertEquals(newUsers, expectedList);
+//    expectedList.add(user.withId(newId));
+//    Assertions.assertEquals((Set.copyOf(newUsers), (Set.copyOf(expectedList));
 // }
 //
