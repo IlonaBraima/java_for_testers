@@ -8,7 +8,6 @@ import ru.stga.addressbook.manager.hdm.UserRecord;
 import ru.stga.addressbook.model.GroupData;
 import ru.stga.addressbook.model.UserData;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -50,7 +49,21 @@ public class HibernateHelper extends HelperBase {
     }
 
     private static UserData convert(UserRecord record) {
-        return new UserData("" + record.id, record.firstname, record.middlename, record.lastname, record.nickname, record.title, record.email, record.photo);
+        return new UserData().withId("" + record.id)
+                .withFirstName(record.firstname)
+                .withMiddleName(record.middlename)
+                .withLastName(record.lastname)
+                .withNickName(record.nickname)
+                .withTitle(record.title)
+                .withEmail(record.email)
+                .withPhoto(record.photo)
+                .withEmail2(record.email2)
+                .withEmail3(record.email3)
+                .withHome(record.home)
+                .withMobile(record.mobile)
+                .withWork(record.work)
+                .withFax(record.fax)
+                .withAddress(record.address);
     }
 
     private static UserRecord convert(UserData data) {

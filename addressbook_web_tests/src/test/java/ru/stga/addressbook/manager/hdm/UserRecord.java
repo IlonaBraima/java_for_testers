@@ -18,6 +18,14 @@ public class UserRecord {
     public String title;
     public String email;
     public String photo;
+    public String email2;
+    public String email3;
+    public String address;
+    public String home;
+    public String mobile;
+    public String work;
+    public String fax;
+
 
     public UserRecord() {
     }

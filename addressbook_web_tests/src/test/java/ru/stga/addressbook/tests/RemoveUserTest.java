@@ -1,7 +1,5 @@
 package ru.stga.addressbook.tests;
 
-import ru.stga.addressbook.common.CommonFunctions;
-import ru.stga.addressbook.model.GroupData;
 import ru.stga.addressbook.model.UserData;
 
 import org.junit.jupiter.api.Assertions;
@@ -16,7 +14,7 @@ public class RemoveUserTest extends TestBase {
     public void CanRemoveUser() {
         //app.users().openHomePage();
         if (app.hbm().getUserCount() == 0) {
-            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", ""));
+            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", "", "", "", "", "", "", "", ""));
         }
         var oldUsers = app.hbm().getUserList();
         var rnd = new Random();
@@ -30,7 +28,7 @@ public class RemoveUserTest extends TestBase {
     @Test
     public void CanRemoveContactFromGroup() {
         if (app.hbm().getUserCount() == 0) {
-            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", ""));
+            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", "", "", "", "", "", "", "", ""));
         }
         var oldUsers = app.hbm().getUserList();
         var rnd = new Random();

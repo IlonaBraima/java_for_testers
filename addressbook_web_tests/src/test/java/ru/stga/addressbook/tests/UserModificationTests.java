@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.Random;
 import java.util.Set;
 
@@ -15,7 +14,7 @@ public class UserModificationTests extends TestBase {
     @Test
     void canModifyUser() {
         if (app.hbm().getUserCount() == 0) {
-            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", ""));
+            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", "", "", "", "", "", "", "", ""));
         }
         var oldUsers = app.hbm().getUserList();
         var rnd = new Random();

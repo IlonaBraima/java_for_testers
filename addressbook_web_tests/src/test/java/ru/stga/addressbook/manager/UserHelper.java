@@ -18,10 +18,13 @@ public class UserHelper extends HelperBase {
     public void createUser(UserData user) {
         openAddNewUserPage();
         initNewNameCreation();
-        //fillUserForm(user);
+        fillUserForm(user);
         fillPersonalDetails(user);
+        fillEmailsAndWebsite(user);
+        fillCompanyDetails();
         submitUserCreation();
         openHomePage();
+
     }
 
     public void create(UserData user, GroupData group) {
@@ -204,4 +207,21 @@ public class UserHelper extends HelperBase {
         }
         return users;
     }
+
+    public String getPhones(UserData user) {
+        return manager.driver.findElement((By.xpath(
+                String.format("//input[@id='%s']/../../td[6]", user.id())))).getText();
+    }
+
+    public String getEmails(UserData user) {
+        return manager.driver.findElement((By.xpath(
+                String.format("//input[@id='%s']/../../td[5]", user.id())))).getText();
+    }
+
+
+    public String getAddress(UserData user) {
+        return manager.driver.findElement((By.xpath(
+                String.format("//input[@id='%s']/../../td[4]", user.id())))).getText();
+    }
+
 }
