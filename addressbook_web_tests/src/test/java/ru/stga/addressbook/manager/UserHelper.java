@@ -217,13 +217,13 @@ public class UserHelper extends HelperBase {
 
     public String getEmails(UserData user) {
         return manager.driver.findElement((By.xpath(
-                String.format("//input[@id='%s']/../../td[5]", user.id())))).getText();
+                String.format("//input[@id='%s']/../../td[4]", user.id())))).getText();
     }
 
 
     public String getAddress(UserData user) {
         return manager.driver.findElement((By.xpath(
-                String.format("//input[@id='%s']/../../td[4]", user.id())))).getText();
+                String.format("//input[@id='%s']/../../td[3]", user.id())))).getText();
     }
 
     public Map<String, String> getPhones() {
@@ -247,6 +247,4 @@ public class UserHelper extends HelperBase {
         }
         return result;
     }
-
-
 }

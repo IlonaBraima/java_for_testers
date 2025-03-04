@@ -33,10 +33,9 @@ public class ContactInfoTests extends TestBase {
         var users = app.hbm().getUserList();
         var expected = users.stream().collect(Collectors.toMap(UserData::id, user ->
                 Stream.of(user.email(), user.email2(), user.email3())
-                        .filter(s -> s != null && ! "".equals(s))
+                        .filter(t -> t != null && ! "".equals(t))
                         .collect(Collectors.joining("\n"))
                 ));
-
         var emails = app.users().getEmails();
         Assertions.assertEquals(expected, emails);
     }
