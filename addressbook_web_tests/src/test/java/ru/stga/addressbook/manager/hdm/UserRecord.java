@@ -25,6 +25,7 @@ public class UserRecord {
     public String mobile;
     public String work;
     public String fax;
+    public String phone2;
 
 
     public UserRecord() {

@@ -62,6 +62,7 @@ public class HibernateHelper extends HelperBase {
                 .withHome(record.home)
                 .withMobile(record.mobile)
                 .withWork(record.work)
+                .withPhone2(record.phone2)
                 .withFax(record.fax)
                 .withAddress(record.address);
     }
