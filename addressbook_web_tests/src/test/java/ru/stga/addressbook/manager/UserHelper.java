@@ -51,13 +51,6 @@ public class UserHelper extends HelperBase {
         openHomePage();
     }
 
-    public void removeContactFromGroup(UserData user) {
-        openHomePage();
-        SelectedUser(user);
-        removeSelectedUser();
-        openHomePage();
-    }
-
     public void deleteAllUsers() {
         openHomePage();
         removeUser(null);
@@ -247,4 +240,41 @@ public class UserHelper extends HelperBase {
         }
         return result;
     }
+
+    public void addUserToGroup(UserData user, GroupData group) {
+        openHomePage();
+        selectUser();
+        selectGroupAdd(group);
+        submitAddToGroup();
+        openHomePage();
+    }
+
+    private void submitAddToGroup() {
+        manager.driver.findElement(By.name("add")).click();
+    }
+
+    private void selectGroupAdd(GroupData group){
+        new Select(manager.driver.findElement(By.name("to_group"))).selectByValue(group.id());
+    }
+
+    void selectUser() {
+        manager.driver.findElement(By.name("selected[]")).click();
+    }
+
+    public void removeContactFromGroup(GroupData group, UserData userToRemove) {
+        openHomePage();
+        selectGroupFrom(group);
+        selectUser();
+        removeFrom();
+        openHomePage();
+    }
+
+    private void removeFrom() {
+        manager.driver.findElement(By.name("remove")).click();
+    }
+
+    private void selectGroupFrom(GroupData group) {
+        new Select(manager.driver.findElement(By.name("group"))).selectByValue(group.id());
+    }
+
 }

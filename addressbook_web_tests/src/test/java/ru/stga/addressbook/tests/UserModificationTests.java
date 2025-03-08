@@ -14,7 +14,7 @@ public class UserModificationTests extends TestBase {
     @Test
     void canModifyUser() {
         if (app.hbm().getUserCount() == 0) {
-            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", "", "", "", "", "", "", "", "", ""));
+            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""));
         }
         var oldUsers = app.hbm().getUserList();
         var rnd = new Random();

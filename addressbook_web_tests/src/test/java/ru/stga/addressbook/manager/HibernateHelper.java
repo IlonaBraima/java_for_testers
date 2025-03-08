@@ -8,8 +8,11 @@ import ru.stga.addressbook.manager.hdm.UserRecord;
 import ru.stga.addressbook.model.GroupData;
 import ru.stga.addressbook.model.UserData;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static ru.stga.addressbook.tests.TestBase.app;
 
 public class HibernateHelper extends HelperBase {
 
@@ -64,7 +67,8 @@ public class HibernateHelper extends HelperBase {
                 .withWork(record.work)
                 .withPhone2(record.phone2)
                 .withFax(record.fax)
-                .withAddress(record.address);
+                .withAddress(record.address)
+                .withCompany(record.company);
     }
 
     private static UserRecord convert(UserData data) {
@@ -119,7 +123,9 @@ public class HibernateHelper extends HelperBase {
 
     public List<UserData> getUsersInGroup(GroupData group) {
         return sessionFactory.fromSession(session -> {
-            return convertUsList(session.get(GroupRecord.class, group.id()).users);
+            GroupRecord groupRecord = session.get(GroupRecord.class, group.id());
+            return groupRecord != null ? convertUsList(groupRecord.users) : Collections.emptyList();
         });
     }
+
 }

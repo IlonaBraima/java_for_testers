@@ -13,7 +13,7 @@ public class ContactInfoTests extends TestBase {
     @Test
     void testPhones() {
         if (app.hbm().getUserCount() == 0) {
-            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", "", "", "", "", "", "", "", "", ""));
+            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""));
         }
         var users = app.hbm().getUserList();
         var expected = users.stream().collect(Collectors.toMap(UserData::id, user ->
@@ -28,7 +28,7 @@ public class ContactInfoTests extends TestBase {
     @Test
     void testEmails() {
         if (app.hbm().getUserCount() == 0) {
-            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", "", "", "", "", "", "", "", "", ""));
+            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""));
         }
         var users = app.hbm().getUserList();
         var expected = users.stream().collect(Collectors.toMap(UserData::id, user ->
@@ -43,7 +43,7 @@ public class ContactInfoTests extends TestBase {
     @Test
     void testAddress() {
         if (app.hbm().getUserCount() == 0) {
-            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", "", "", "", "", "", "", "", "", ""));
+            app.hbm().createUser(new UserData("", "firstname", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""));
         }
         var users = app.hbm().getUserList();
         var user = users.get(0);
