@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mantis_test/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mantis_test/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mantis_test/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mantis_test/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/RemoveUserFromGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/RemoveUserFromGroupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +73,7 @@
     "Application.Geometry.executor": "Run",
     "Application.Hello.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.AddUserToGroupTest.canAddUserToGroup.executor": "Run",
     "Gradle.Build addressbook_web_tests.executor": "Run",
     "Gradle.ContactInfoTests.executor": "Run",
     "Gradle.ContactInfoTests.testAddress.executor": "Run",
@@ -111,6 +107,8 @@
     "Gradle.GroupCreationTest.test.executor": "Run",
     "Gradle.GroupModificationTests.canModifyGroup.executor": "Run",
     "Gradle.GroupModificationTests.executor": "Debug",
+    "Gradle.LoginTests.CanLogin.executor": "Run",
+    "Gradle.RemoveUserFromGroupTest.canAddAndRemoveUserFromGroup.executor": "Run",
     "Gradle.RemoveUserTest (1).executor": "Run",
     "Gradle.RemoveUserTest.CanRemoveContactFromGroup.executor": "Debug",
     "Gradle.RemoveUserTest.CanRemoveUser (1).executor": "Debug",
@@ -196,7 +194,7 @@
       <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests\src\test\java\ru\stga\addressbook\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LoginTests.CanLogin">
+  <component name="RunManager" selected="Gradle.AddUserToGroupTest.canAddUserToGroup">
     <configuration name="Hello" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hello" />
       <module name="sandbox.main" />
@@ -204,7 +202,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactWithGroupTests.CanAddUsersToGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddUserToGroupTest.canAddUserToGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -217,7 +215,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stga.addressbook.tests.ContactWithGroupTests.CanAddUsersToGroup&quot;" />
+            <option value="&quot;ru.stga.addressbook.tests.AddUserToGroupTest.canAddUserToGroup&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -276,30 +274,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ContactWithGroupTests.canRemoveContactFromGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stga.addressbook.tests.ContactWithGroupTests.canRemoveContactFromGroup&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="LoginTests.CanLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -324,21 +298,45 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="RemoveUserFromGroupTest.canAddAndRemoveUserFromGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stga.addressbook.tests.RemoveUserFromGroupTest.canAddAndRemoveUserFromGroup&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Hello" />
+      <item itemvalue="Gradle.AddUserToGroupTest.canAddUserToGroup" />
+      <item itemvalue="Gradle.RemoveUserFromGroupTest.canAddAndRemoveUserFromGroup" />
       <item itemvalue="Gradle.LoginTests.CanLogin" />
-      <item itemvalue="Gradle.ContactWithGroupTests.CanAddUsersToGroup" />
       <item itemvalue="Gradle.ContactWithGroupTests.canAddAndRemoveUserFromGroup" />
       <item itemvalue="Gradle.ContactWithGroupTests.canCreateContactInGroup" />
-      <item itemvalue="Gradle.ContactWithGroupTests.canRemoveContactFromGroup" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AddUserToGroupTest.canAddUserToGroup" />
+        <item itemvalue="Gradle.RemoveUserFromGroupTest.canAddAndRemoveUserFromGroup" />
         <item itemvalue="Gradle.LoginTests.CanLogin" />
         <item itemvalue="Gradle.ContactWithGroupTests.canAddAndRemoveUserFromGroup" />
         <item itemvalue="Gradle.ContactWithGroupTests.canCreateContactInGroup" />
-        <item itemvalue="Gradle.ContactWithGroupTests.canRemoveContactFromGroup" />
-        <item itemvalue="Gradle.ContactWithGroupTests.CanAddUsersToGroup" />
       </list>
     </recent_temporary>
   </component>

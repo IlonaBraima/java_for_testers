@@ -9,24 +9,7 @@ import ru.stga.addressbook.model.UserData;
 
 import java.util.Random;
 
-public class ContactWithGroupTests extends TestBase {
-
-    @Test
-    void canCreateContactInGroup() {
-        var user = new UserData()
-                .withFirstName(CommonFunctions.randomString(10))
-                .withLastName(CommonFunctions.randomString(10))
-                .withPhoto(randomFile("src/test/resources/images"));
-        if (app.hbm().getGroupCount() == 0) {
-            app.hbm().createGroup(new GroupData("", "group name", "group header", "group footer"));
-        }
-        var group = app.hbm().getGroupList().get(0);
-
-        var oldRelated = app.hbm().getUsersInGroup(group);
-        app.users().create(user, group);
-        var newRelated = app.hbm().getUsersInGroup(group);
-        Assertions.assertEquals(oldRelated.size() + 1, newRelated.size());
-    }
+public class RemoveUserFromGroupTest extends TestBase {
 
     @Test
     public void canAddAndRemoveUserFromGroup() {
