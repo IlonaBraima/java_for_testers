@@ -2,6 +2,7 @@ package ru.stqa.mantis.manager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Properties;
+import ru.stqa.mantis.manager.JamesCliHelper;
 
 
 public class ApplicationManager {
@@ -11,6 +12,7 @@ public class ApplicationManager {
     private Properties properties;
     private SessionHelper sessionHelper;
     private HttpSessionHelper httpSessionHelper;
+    private JamesCliHelper jamesCliHelper;
 
     public void init(String browser, Properties properties) {
         this.string = browser;
@@ -45,6 +47,13 @@ public class ApplicationManager {
             httpSessionHelper = new HttpSessionHelper(this);
         }
         return httpSessionHelper;
+    }
+
+    public JamesCliHelper jamesCli() {
+        if (jamesCliHelper == null) {
+            jamesCliHelper = new JamesCliHelper(this);
+        }
+        return jamesCliHelper;
     }
 
     public String property(String name) {

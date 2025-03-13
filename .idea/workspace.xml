@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/mantis_test.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/mantis_test.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/mantis_test.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/mantis_test.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_test/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_test/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +75,7 @@
     "Downloaded.Files.Path.Enabled": "false",
     "Gradle.AddUserToGroupTest.canAddUserToGroup.executor": "Run",
     "Gradle.Build addressbook_web_tests.executor": "Run",
+    "Gradle.Build mantis_test.executor": "Run",
     "Gradle.ContactInfoTests.executor": "Run",
     "Gradle.ContactInfoTests.testAddress.executor": "Run",
     "Gradle.ContactInfoTests.testEmails.executor": "Run",
@@ -112,6 +108,8 @@
     "Gradle.GroupCreationTest.test.executor": "Run",
     "Gradle.GroupModificationTests.canModifyGroup.executor": "Run",
     "Gradle.GroupModificationTests.executor": "Debug",
+    "Gradle.JamesTests.canCreateUser.executor": "Run",
+    "Gradle.JamesTests.executor": "Run",
     "Gradle.LoginTests.CanLogin.executor": "Run",
     "Gradle.LoginTests.executor": "Run",
     "Gradle.RemoveUserFromGroupTest.canAddAndRemoveUserFromGroup.executor": "Run",
@@ -171,7 +169,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/anoli/java_for_testers/addressbook_web_tests/src/test/java",
-    "last_opened_file_path": "C:/Users/anoli/java_for_testers/mantis_test",
+    "last_opened_file_path": "C:/Users/anoli/java_for_testers/mantis_test/src/test/java/ru.stqa.mantis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -188,6 +186,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anoli\java_for_testers\mantis_test\src\test\java\ru.stqa.mantis" />
       <recent name="C:\Users\anoli\java_for_testers\mantis_test" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
@@ -200,7 +199,7 @@
       <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests\src\test\java\ru\stga\addressbook\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LoginTests">
+  <component name="RunManager" selected="Gradle.JamesTests">
     <configuration name="Hello" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hello" />
       <module name="sandbox.main" />
@@ -232,10 +231,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ContactWithGroupTests.canAddAndRemoveUserFromGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JamesTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_test" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -245,7 +244,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stga.addressbook.tests.ContactWithGroupTests.canAddAndRemoveUserFromGroup&quot;" />
+            <option value="&quot;ru.stqa.mantis.tests.JamesTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="JamesTests.canCreateUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_test" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.mantis.tests.JamesTests.canCreateUser&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -304,45 +327,21 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RemoveUserFromGroupTest.canAddAndRemoveUserFromGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stga.addressbook.tests.RemoveUserFromGroupTest.canAddAndRemoveUserFromGroup&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.Hello" />
+      <item itemvalue="Gradle.JamesTests" />
+      <item itemvalue="Gradle.JamesTests.canCreateUser" />
       <item itemvalue="Gradle.LoginTests" />
       <item itemvalue="Gradle.AddUserToGroupTest.canAddUserToGroup" />
-      <item itemvalue="Gradle.RemoveUserFromGroupTest.canAddAndRemoveUserFromGroup" />
       <item itemvalue="Gradle.LoginTests.CanLogin" />
-      <item itemvalue="Gradle.ContactWithGroupTests.canAddAndRemoveUserFromGroup" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.JamesTests" />
+        <item itemvalue="Gradle.JamesTests.canCreateUser" />
         <item itemvalue="Gradle.LoginTests" />
         <item itemvalue="Gradle.LoginTests.CanLogin" />
         <item itemvalue="Gradle.AddUserToGroupTest.canAddUserToGroup" />
-        <item itemvalue="Gradle.RemoveUserFromGroupTest.canAddAndRemoveUserFromGroup" />
-        <item itemvalue="Gradle.ContactWithGroupTests.canAddAndRemoveUserFromGroup" />
       </list>
     </recent_temporary>
   </component>
