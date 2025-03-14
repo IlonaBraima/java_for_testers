@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/mantis_test.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/mantis_test.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/mantis_test.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/mantis_test.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_test/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/ApplicationManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +54,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -112,6 +116,7 @@
     "Gradle.JamesTests.executor": "Run",
     "Gradle.LoginTests.CanLogin.executor": "Run",
     "Gradle.LoginTests.executor": "Run",
+    "Gradle.MailTests.canReceiveEmail.executor": "Run",
     "Gradle.RemoveUserFromGroupTest.canAddAndRemoveUserFromGroup.executor": "Run",
     "Gradle.RemoveUserTest (1).executor": "Run",
     "Gradle.RemoveUserTest.CanRemoveContactFromGroup.executor": "Debug",
@@ -199,37 +204,13 @@
       <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests\src\test\java\ru\stga\addressbook\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.JamesTests">
+  <component name="RunManager" selected="Gradle.MailTests">
     <configuration name="Hello" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hello" />
       <module name="sandbox.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="AddUserToGroupTest.canAddUserToGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stga.addressbook.tests.AddUserToGroupTest.canAddUserToGroup&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="JamesTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -303,7 +284,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.CanLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MailTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_test" />
@@ -316,7 +297,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.LoginTests.CanLogin&quot;" />
+            <option value="&quot;ru.stqa.mantis.tests.MailTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MailTests.canReceiveEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_test" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.mantis.tests.MailTests.canReceiveEmail&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -329,19 +334,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Hello" />
+      <item itemvalue="Gradle.MailTests" />
+      <item itemvalue="Gradle.MailTests.canReceiveEmail" />
       <item itemvalue="Gradle.JamesTests" />
       <item itemvalue="Gradle.JamesTests.canCreateUser" />
       <item itemvalue="Gradle.LoginTests" />
-      <item itemvalue="Gradle.AddUserToGroupTest.canAddUserToGroup" />
-      <item itemvalue="Gradle.LoginTests.CanLogin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MailTests" />
+        <item itemvalue="Gradle.MailTests.canReceiveEmail" />
         <item itemvalue="Gradle.JamesTests" />
         <item itemvalue="Gradle.JamesTests.canCreateUser" />
         <item itemvalue="Gradle.LoginTests" />
-        <item itemvalue="Gradle.LoginTests.CanLogin" />
-        <item itemvalue="Gradle.AddUserToGroupTest.canAddUserToGroup" />
       </list>
     </recent_temporary>
   </component>
