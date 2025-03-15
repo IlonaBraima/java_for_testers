@@ -7,7 +7,7 @@ import ru.stqa.mantis.manager.JamesCliHelper;
 
 public class ApplicationManager {
 
-    private WebDriver driver;
+    WebDriver driver;
     private String string;
     private Properties properties;
     private SessionHelper sessionHelper;

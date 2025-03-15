@@ -6,18 +6,12 @@ import org.junit.jupiter.api.Test;
 import java.time.Duration;
 import java.util.regex.Pattern;
 
-public class LoginTests extends TestBase {
+public class UserRegTests extends TestBase {
 
     @Test
-    void CanLogin() {
-        app.http().login("administrator", "root");
-        Assertions.assertTrue(app.http().isLoggedIn());
-    }
-
-    @Test
-    void canRegisterUser() {
+    void CanRegisterUser() {
         // 1. Создаём пользователя в JamesHelper
-        //app.jamesCli().addUser("%s@localhost", "password");
+        app.jamesCli().addUser("%s@localhost", "password");
 
         // 2. Заполняем форму регистрации и отправляем через браузер
         app.mail().openRegistrationPage();
