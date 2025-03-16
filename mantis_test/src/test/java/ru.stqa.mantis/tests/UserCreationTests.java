@@ -23,15 +23,15 @@ DeveloperMailUser user;
         user = app.developerMail().addUser();
         var email = String.format("%s@developermail.com", user.name());
 
-//        app.mail().startCreation(user);
-//
-//        var messages = app.mail().receive(email, password, Duration.ofSeconds(10));
-//        var url = CommonFunctions.extractUrl(messages.get(0).content());
-//
-//        app.mail().finishCreation(user);
-//
-//        app.http().login(user, password);
-//        Assertions.assertTrue(app.http().isLoggedIn());
+        app.users().startCreation(user.name(), email);
+
+        var message = app.developerMail().receive(user, Duration.ofSeconds(10));
+        var url = CommonFunctions.extractUrl(message);
+
+        app.users().finishCreation(url, password);
+
+        app.http().login(user.name(), password);
+        Assertions.assertTrue(app.http().isLoggedIn());
 
     }
 

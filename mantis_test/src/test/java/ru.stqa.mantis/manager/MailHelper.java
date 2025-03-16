@@ -123,9 +123,6 @@ public class MailHelper extends HelperBase {
         manager.driver.findElement(By.cssSelector("button.btn-success")).click();
     }
 
-    public void startCreation(String user) {
-    }
-
     public void finishCreation(String user) {
     }
 }
