@@ -2,18 +2,21 @@ package ru.stqa.mantis.manager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Properties;
+import java.util.stream.Stream;
+
 import ru.stqa.mantis.manager.JamesCliHelper;
 
 
 public class ApplicationManager {
 
-    WebDriver driver;
+    protected WebDriver driver;
     private String string;
     private Properties properties;
     private SessionHelper sessionHelper;
     private HttpSessionHelper httpSessionHelper;
     private JamesCliHelper jamesCliHelper;
     private MailHelper mailHelper;
+    private JamesApiHelper jamesApiHelper;
 
     public void init(String browser, Properties properties) {
         this.string = browser;
@@ -57,6 +60,13 @@ public class ApplicationManager {
         return jamesCliHelper;
     }
 
+    public JamesApiHelper jamesApi() {
+        if (jamesApiHelper == null) {
+            jamesApiHelper = new JamesApiHelper(this);
+        }
+        return jamesApiHelper;
+    }
+
     public MailHelper mail() {
         if (mailHelper == null) {
             mailHelper = new MailHelper(this);
@@ -64,8 +74,22 @@ public class ApplicationManager {
         return mailHelper;
     }
 
+    protected boolean isElementPresent(By locator) {
+        try {
+            driver.findElement(locator);
+            return true;
+        } catch (NoSuchElementException exception) {
+            return false;
+        }
+    }
+
     public String property(String name) {
         return properties.getProperty(name);
     }
 
+    static Stream<String> randomUser() {
+        return Stream.of("user1", "user2", "testUser" + System.currentTimeMillis());
+    }
+
 }
+

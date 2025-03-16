@@ -100,7 +100,9 @@ public class MailHelper extends HelperBase {
     }
 
     public void openRegistrationPage() {
-        manager.driver.get("http://localhost/mantisbt-2.26.2/signup_page.php");
+        if (!manager.isElementPresent(By.id("main-container"))) {
+            manager.driver.get("http://localhost/mantisbt-2.26.2/signup_page.php");
+        }
     }
 
     public void submitRegistrationForm() {
@@ -119,5 +121,11 @@ public class MailHelper extends HelperBase {
         enterText(By.name("password"), "password");
         enterText(By.name("password_confirm"), "password");
         manager.driver.findElement(By.cssSelector("button.btn-success")).click();
+    }
+
+    public void startCreation(String user) {
+    }
+
+    public void finishCreation(String user) {
     }
 }
