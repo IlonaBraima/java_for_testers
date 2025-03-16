@@ -14,6 +14,7 @@ public class JamesApiHelper extends HelperBase {
     public JamesApiHelper(ApplicationManager manager) {
 
         super(manager);
+
         client = new OkHttpClient.Builder().cookieJar(new JavaNetCookieJar(new CookieManager())).build();
     }
 
@@ -28,8 +29,5 @@ public class JamesApiHelper extends HelperBase {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-
     }
-
 }
