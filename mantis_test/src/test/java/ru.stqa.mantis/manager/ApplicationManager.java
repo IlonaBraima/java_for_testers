@@ -4,8 +4,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Properties;
 import java.util.stream.Stream;
 
-import ru.stqa.mantis.manager.JamesCliHelper;
-
 
 public class ApplicationManager {
 
@@ -19,11 +17,12 @@ public class ApplicationManager {
     private JamesApiHelper jamesApiHelper;
     private DeveloperMailHelper developerMailHelper;
     private UsersHelper usersHelper;
+    private RestApiHelper restApiHelper;
 
     public void init(String browser, Properties properties) {
         this.string = browser;
         this.properties = properties;
-        }
+    }
 
     public WebDriver driver() {
         if (driver == null) {
@@ -88,6 +87,13 @@ public class ApplicationManager {
             developerMailHelper = new DeveloperMailHelper(this);
         }
         return developerMailHelper;
+    }
+
+    public RestApiHelper rest() {
+        if (restApiHelper == null) {
+            restApiHelper = new RestApiHelper(this);
+        }
+        return restApiHelper;
     }
 
     protected boolean isElementPresent(By locator) {
