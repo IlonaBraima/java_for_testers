@@ -1,6 +1,14 @@
 package ru.stqa.mantis.manager;
-import org.checkerframework.checker.signature.qual.Identifier;
+import io.swagger.client.ApiException;
+import io.swagger.client.model.Identifier;
 import ru.stqa.mantis.model.IssueData;
+import io.swagger.client.ApiClient;
+import io.swagger.client.Configuration;
+import io.swagger.client.auth.ApiKeyAuth;
+import io.swagger.client.model.Issue;
+import io.swagger.client.api.IssuesApi;
+import io.swagger.client.model.Identifier;
+
 
 public class RestApiHelper extends HelperBase {
 
@@ -16,16 +24,15 @@ public class RestApiHelper extends HelperBase {
         issue.setSummary(issueData.summary());
         issue.setDescription(issueData.description());
         var projectId = new Identifier();
-        projectId = new Identifier();
         projectId.setId(issueData.project());
-        issue.setProjects(projectId);
+        issue.setProject(projectId);
         var categoryId = new Identifier();
         categoryId.setId(issueData.category());
-        issue.setCategory(CategoryId());
+        issue.setCategory(categoryId);
 
         IssuesApi apiInstance = new IssuesApi();
         try {
-            apiInstance.issueAdd(body);
+            apiInstance.issueAdd(issue);
         } catch (ApiException e) {
            new RuntimeException(e);
         }
