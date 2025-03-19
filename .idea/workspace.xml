@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/RestApiHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/RestApiHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/model/IssueData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/model/IssueData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_test/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/IssueCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/IssueCreationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_test/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/swagger.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
