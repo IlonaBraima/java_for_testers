@@ -26,7 +26,6 @@ public class UserHelper extends HelperBase {
         fillCompanyDetails();
         submitUserCreation();
         openHomePage();
-
     }
 
     public void create(UserData user, GroupData group) {
@@ -41,7 +40,6 @@ public class UserHelper extends HelperBase {
 
     private void selectGroup(GroupData group) {
         new Select(manager.driver.findElement(By.name("new_group"))).selectByValue(group.id());
-
     }
 
     public void removeUser(UserData user) {
@@ -88,6 +86,7 @@ public class UserHelper extends HelperBase {
         enterText(By.name("company"), "Company");
         enterText(By.name("address"), "Address");
     }
+
     private void fillContactDetails() {
         enterText(By.name("home"), "12345");
         enterText(By.name("mobile"), "12345");
@@ -106,13 +105,11 @@ public class UserHelper extends HelperBase {
         selectDropdownValue(By.name("bday"), "1");
         selectDropdownValue(By.name("bmonth"), "January");
         enterText(By.name("byear"), "1990");
-
         selectDropdownValue(By.name("aday"), "1");
         selectDropdownValue(By.name("amonth"), "January");
         enterText(By.name("ayear"), "2000");
     }
 
-    // Вспомогательный метод для ввода текста
     private void enterText(By locator, String text) {
         WebElement element = manager.driver.findElement(locator);
         element.click();
@@ -120,7 +117,6 @@ public class UserHelper extends HelperBase {
         element.sendKeys(text);
     }
 
-    // Вспомогательный метод для выбора значения в выпадающем списке
     private void selectDropdownValue(By locator, String value) {
         WebElement dropdown = manager.driver.findElement(locator);
         dropdown.findElement(By.xpath("//option[. = '" + value + "']")).click();
@@ -213,7 +209,6 @@ public class UserHelper extends HelperBase {
                 String.format("//input[@id='%s']/../../td[4]", user.id())))).getText();
     }
 
-
     public String getAddress(UserData user) {
         return manager.driver.findElement((By.xpath(
                 String.format("//input[@id='%s']/../../td[3]", user.id())))).getText();
@@ -243,7 +238,7 @@ public class UserHelper extends HelperBase {
 
     public void addUserToGroup(UserData user, GroupData group) {
         openHomePage();
-        selectUser();
+        selectUser(user);
         selectGroupAdd(group);
         submitAddToGroup();
         openHomePage();
@@ -257,14 +252,14 @@ public class UserHelper extends HelperBase {
         new Select(manager.driver.findElement(By.name("to_group"))).selectByValue(group.id());
     }
 
-    void selectUser() {
-        manager.driver.findElement(By.name("selected[]")).click();
+    void selectUser(UserData user) {
+        click(By.cssSelector(String.format("input[value='%s']", user.id())));
     }
 
-    public void removeContactFromGroup(GroupData group, UserData userToRemove) {
+    public void removeContactFromGroup(GroupData group, UserData user) {
         openHomePage();
         selectGroupFrom(group);
-        selectUser();
+        selectUser(user);
         removeFrom();
         openHomePage();
     }
@@ -276,5 +271,4 @@ public class UserHelper extends HelperBase {
     private void selectGroupFrom(GroupData group) {
         new Select(manager.driver.findElement(By.name("group"))).selectByValue(group.id());
     }
-
 }

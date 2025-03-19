@@ -15,25 +15,23 @@ public class AddUserToGroupTest extends TestBase {
     @Test
     public void canAddUserToGroup() {
         if (app.hbm().getGroupCount() == 0) {
-            app.hbm().createGroup(new GroupData("", "Test Group", "Header", "Footer"));
+            app.hbm().createGroup(
+                    new GroupData("", "Test Group", "Header", "Footer"));
         }
 
-        var groups = app.hbm().getGroupList();
-        var rnd = new Random();
-        var group = groups.get(rnd.nextInt(groups.size()));
-
-        var oldUsersInGroup = app.hbm().getUsersInGroup(group);
-
-        var user = new UserData()
+        var group = app.hbm().getGroupList().get(0);
+        if (app.hbm().getUserCount() == 0) {
+        app.users().createUser(new UserData()
                 .withFirstName(CommonFunctions.randomString(10))
-                .withLastName(CommonFunctions.randomString(10))
-                .withPhoto(randomFile("src/test/resources/images"));
+                .withLastName(CommonFunctions.randomString(10)));
+        }
 
-        app.users().addUserToGroup(user, group); // Добавляем пользователя в группу
-
-        var newUsersInGroup = app.hbm().getUsersInGroup(group);
-        int newSize = newUsersInGroup.size(); // Получаем новый размер списка
-
-        Assertions.assertTrue(newSize >= 1, "Количество пользователей в группе должно быть больше или равно 1");
+        var user = app.hbm().getUserList().get(0);
+        var oldRelated = app.hbm().getUsersInGroup(group);
+         app.users().addUserToGroup(user, group);
+         var newRelated = app.hbm().getUsersInGroup(group);
+         Assertions.assertEquals(oldRelated.size() + 1, newRelated.size());
     }
+
 }
+
