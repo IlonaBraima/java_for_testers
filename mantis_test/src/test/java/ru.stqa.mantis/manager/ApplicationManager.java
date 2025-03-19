@@ -18,6 +18,7 @@ public class ApplicationManager {
     private DeveloperMailHelper developerMailHelper;
     private UsersHelper usersHelper;
     private RestApiHelper restApiHelper;
+    private SoapApiHelper soapApiHelper;
 
     public void init(String browser, Properties properties) {
         this.string = browser;
@@ -94,6 +95,13 @@ public class ApplicationManager {
             restApiHelper = new RestApiHelper(this);
         }
         return restApiHelper;
+    }
+
+    public SoapApiHelper soap() {
+        if (soapApiHelper == null) {
+            soapApiHelper = new SoapApiHelper(this);
+        }
+        return soapApiHelper;
     }
 
     protected boolean isElementPresent(By locator) {
