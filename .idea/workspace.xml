@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/UserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/UserHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/AddUserToGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/AddUserToGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/HibernateHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/HibernateHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/JdbcHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/JdbcHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/DeveloperMailHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/DeveloperMailHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/JamesCliHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/JamesCliHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/MailHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/MailHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/SessionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/SessionHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/IssueCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/IssueCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/UserRegTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/UserRegTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,9 +159,10 @@
     "Gradle.UserCreationTests.canCreateUser.executor": "Run",
     "Gradle.UserModificationTests.canModifyUser.executor": "Run",
     "Gradle.UserModificationTests.executor": "Run",
+    "Gradle.UserRegTests (1).executor": "Run",
     "Gradle.UserRegTests.CanRegisterUser.executor": "Run",
     "Gradle.UserRegTests.canCreateUser.executor": "Run",
-    "Gradle.UserRegTests.canRegisterUser.executor": "Debug",
+    "Gradle.UserRegTests.canRegisterUser.executor": "Run",
     "Gradle.UserRegTests.executor": "Run",
     "Gradle.UserRegisterTest.CanLogin.executor": "Run",
     "Gradle.UserRegistrationTests.canRegisterUser.executor": "Run",
@@ -171,6 +181,8 @@
     "JUnit.CollectionTests.listTest.executor": "Run",
     "JUnit.CollectionTests.testMap.executor": "Run",
     "JUnit.GroupCreationTest.executor": "Run",
+    "JUnit.LoginTests.CanLogin.executor": "Run",
+    "JUnit.LoginTests.canRegisterUser.executor": "Run",
     "JUnit.RectangleTest.cannotCreateRectangleWithNegativeSide.executor": "Run",
     "JUnit.RectangleTest.testEquality.executor": "Run",
     "JUnit.RectangleTest.testEquality2.executor": "Run",
@@ -183,6 +195,9 @@
     "JUnit.TriangleTest.throwsExceptionForTriangleInequalityViolation.executor": "Run",
     "JUnit.TriangleTest.validTriangleSatisfiesInequality.executor": "Run",
     "JUnit.UserCreationTests.executor": "Run",
+    "JUnit.UserRegTests.canRegisterUser.executor": "Run",
+    "JUnit.UserRegTests.canRegisterUserWithJamesApi.executor": "Run",
+    "JUnit.UserRegTests.executor": "Run",
     "JUnit.mathTests.testDivideByZero.executor": "Run",
     "JUnit.squareTest.canCalculateArea.executor": "Run",
     "JUnit.squareTest.cannotCreateSquareWithNegativeSide.executor": "Run",
@@ -209,7 +224,7 @@
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "settings.editor.splitter.proportion": "0.2556008",
     "vue.rearranger.settings.migration": "true"
   }
@@ -233,149 +248,100 @@
       <recent name="ru.stqa.mantis.manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AddUserToGroupTest">
-    <configuration name="Hello" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Hello" />
-      <module name="sandbox.main" />
+  <component name="RunManager" selected="JUnit.UserRegTests.canRegisterUser">
+    <configuration name="LoginTests.CanLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mantis_test.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.mantis.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.mantis.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.mantis.tests.LoginTests" />
+      <option name="METHOD_NAME" value="CanLogin" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddUserToGroupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stga.addressbook.tests.AddUserToGroupTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="LoginTests.canRegisterUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mantis_test.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.mantis.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.mantis.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.mantis.tests.LoginTests" />
+      <option name="METHOD_NAME" value="canRegisterUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="IssueCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_test" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.IssueCreationTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="UserRegTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mantis_test.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.mantis.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.mantis.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.mantis.tests.UserRegTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="IssueCreationTests.canCreateIssue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_test" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.IssueCreationTests.canCreateIssue&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="UserRegTests.canRegisterUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mantis_test.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.mantis.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.mantis.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.mantis.tests.UserRegTests" />
+      <option name="METHOD_NAME" value="canRegisterUser(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="MailTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_test" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.MailTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="UserCreationTests.canCreateUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_test" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.UserCreationTests.canCreateUser&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="UserRegTests.canRegisterUserWithJamesApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mantis_test.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.mantis.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.mantis.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.mantis.tests.UserRegTests" />
+      <option name="METHOD_NAME" value="canRegisterUserWithJamesApi(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Hello" />
-      <item itemvalue="Gradle.AddUserToGroupTest" />
-      <item itemvalue="Gradle.IssueCreationTests" />
-      <item itemvalue="Gradle.IssueCreationTests.canCreateIssue" />
-      <item itemvalue="Gradle.MailTests" />
-      <item itemvalue="Gradle.UserCreationTests.canCreateUser" />
+      <item itemvalue="JUnit.LoginTests.CanLogin" />
+      <item itemvalue="JUnit.LoginTests.canRegisterUser" />
+      <item itemvalue="JUnit.UserRegTests" />
+      <item itemvalue="JUnit.UserRegTests.canRegisterUser" />
+      <item itemvalue="JUnit.UserRegTests.canRegisterUserWithJamesApi" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AddUserToGroupTest" />
-        <item itemvalue="Gradle.IssueCreationTests" />
-        <item itemvalue="Gradle.UserCreationTests.canCreateUser" />
-        <item itemvalue="Gradle.IssueCreationTests.canCreateIssue" />
-        <item itemvalue="Gradle.MailTests" />
+        <item itemvalue="JUnit.UserRegTests.canRegisterUser" />
+        <item itemvalue="JUnit.UserRegTests.canRegisterUserWithJamesApi" />
+        <item itemvalue="JUnit.LoginTests.canRegisterUser" />
+        <item itemvalue="JUnit.LoginTests.CanLogin" />
+        <item itemvalue="JUnit.UserRegTests" />
       </list>
     </recent_temporary>
   </component>
@@ -443,6 +409,7 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sandbox$UserRegTests.ic" NAME="UserRegTests Coverage Results" MODIFIED="1742413683168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/sandbox$CreateUserTest__1_.ic" NAME="CreateUserTest (1) Coverage Results" MODIFIED="1740244796579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

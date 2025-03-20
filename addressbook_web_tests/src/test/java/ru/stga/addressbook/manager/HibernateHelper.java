@@ -12,8 +12,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static ru.stga.addressbook.tests.TestBase.app;
-
 public class HibernateHelper extends HelperBase {
 
     private SessionFactory sessionFactory;
@@ -28,7 +26,6 @@ public class HibernateHelper extends HelperBase {
                 .setProperty(AvailableSettings.JAKARTA_JDBC_USER, "root")
                 .setProperty(AvailableSettings.JAKARTA_JDBC_PASSWORD, "")
                 .buildSessionFactory();
-
     }
 
     static List<GroupData> convertList(List<GroupRecord> records) {
@@ -110,7 +107,6 @@ public class HibernateHelper extends HelperBase {
             session.persist(convert(groupData));
             session.getTransaction().commit();
         });
-
     }
 
     public void createUser(UserData userData) {
@@ -127,5 +123,4 @@ public class HibernateHelper extends HelperBase {
             return groupRecord != null ? convertUsList(groupRecord.users) : Collections.emptyList();
         });
     }
-
 }

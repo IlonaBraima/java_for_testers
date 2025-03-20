@@ -1,6 +1,5 @@
 package ru.stqa.mantis.manager;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeUtility;
@@ -37,11 +36,17 @@ public class DeveloperMailHelper extends HelperBase {
             var text = response.body().string();
             var addUserResponse = new ObjectMapper().readValue(text, AddUserResponse.class);
             if (!addUserResponse.success()) {
-                throw new RuntimeException(addUserResponse.errors().toString());
+                throw new RuntimeException("API Error: " + addUserResponse.errors());
             }
-            return addUserResponse.result();
+
+            DeveloperMailUser user = addUserResponse.result();
+            if (user == null) {
+                throw new RuntimeException("API returned null user!");
+            }
+
+            return user;
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Request failed", e);
         }
     }
 

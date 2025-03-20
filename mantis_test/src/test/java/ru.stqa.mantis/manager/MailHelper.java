@@ -3,15 +3,16 @@ package ru.stqa.mantis.manager;
 import jakarta.mail.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import ru.stqa.mantis.model.DeveloperMailUser;
 import ru.stqa.mantis.model.MailMessage;
 
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
-
-import static ru.stqa.mantis.tests.TestBase.app;
 
 public class MailHelper extends HelperBase {
 
@@ -61,8 +62,6 @@ public class MailHelper extends HelperBase {
             store.connect("localhost", username, password);
             var inbox = store.getFolder("INBOX");
             return inbox;
-        } catch (NoSuchProviderException e) {
-            throw new RuntimeException(e);
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
@@ -100,17 +99,46 @@ public class MailHelper extends HelperBase {
     }
 
     public void openRegistrationPage() {
-        if (!manager.isElementPresent(By.id("main-container"))) {
-            manager.driver.get("http://localhost/mantisbt-2.26.2/signup_page.php");
+        if (!manager.isElementPresent(By.id("signup-form"))) {
+           // manager.driver.get("http://localhost/mantisbt-2.26.2/signup_page.php");
+            click(By.linkText("groups"));
         }
+
+//    public void openGroupPage() {
+//        if (!manager.isElementPresent(By.name("new"))) {
+//            click(By.linkText("groups"));
+//        }
     }
 
     public void submitRegistrationForm() {
         manager.driver.findElement(By.cssSelector("input[type='submit'].btn.btn-primary.btn-white.btn-round"));
     }
 
-    public void openUrl(String url) {
-        app.mail().openUrl(url);
+    //public void openUrl(String url) {
+       // app.mail().openUrl(url);
+   // }
+
+//    public static String extractUrlFromMessage(String text) {
+//        Pattern pattern = Pattern.compile("http://\\S+");
+//        var matcher = pattern.matcher(text);
+//        if (matcher.find()) {
+//            var url = text.substring(matcher.start(), matcher.end());
+//            return url;
+//        }
+//        return null;
+//    }
+
+    public static String extractUrlFromMessage(String text) {
+        if (text == null || text.isEmpty()) {
+            throw new IllegalArgumentException("Message text is null or empty");
+        }
+        Pattern pattern = Pattern.compile("(https?://\\S+)");
+        Matcher matcher = pattern.matcher(text);
+
+        if (matcher.find()) {
+            return matcher.group(1);
+        }
+        throw new RuntimeException("No URL found in message");
     }
 
     public void login() {
