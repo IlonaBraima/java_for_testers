@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/addressbook_web_tests.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/addressbook_web_tests.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/HibernateHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/HibernateHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/DeleteGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/DeleteGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/ApplicationManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +170,7 @@
     "JUnit.CollectionTests.executor": "Run",
     "JUnit.CollectionTests.listTest.executor": "Run",
     "JUnit.CollectionTests.testMap.executor": "Run",
+    "JUnit.CreateUserTest.canCreateContact.executor": "Run",
     "JUnit.GroupCreationTest.executor": "Run",
     "JUnit.LoginTests.CanLogin.executor": "Run",
     "JUnit.LoginTests.canRegisterUser.executor": "Run",
@@ -206,7 +205,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/anoli/java_for_testers/addressbook_web_tests/src/test/java",
-    "last_opened_file_path": "C:/Users/anoli/java_for_testers/mantis_test/src/test/java",
+    "last_opened_file_path": "C:/Users/anoli/java_for_testers/addressbook_web_tests/src/test/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -223,6 +222,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests\src\test\resources" />
       <recent name="C:\Users\anoli\java_for_testers\mantis_test\src\test\java" />
       <recent name="C:\Users\anoli\java_for_testers\mantis_test\src\test\java\ru.stqa.mantis" />
       <recent name="C:\Users\anoli\java_for_testers\mantis_test" />
@@ -234,13 +234,31 @@
       <recent name="Rectangle" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests" />
+      <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests\src" />
       <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests\src\test\java\ru\stga\addressbook\tests" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.stqa.mantis.manager" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRegTests.canRegisterUser">
+  <component name="RunManager" selected="JUnit.CreateUserTest.canCreateContact">
+    <configuration name="CreateUserTest.canCreateContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="addressbook_web_tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stga.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stga.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stga.addressbook.tests.CreateUserTest" />
+      <option name="METHOD_NAME" value="canCreateContact" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTests.CanLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mantis_test.test" />
       <extension name="coverage">
@@ -269,21 +287,6 @@
       <option name="MAIN_CLASS_NAME" value="ru.stqa.mantis.tests.LoginTests" />
       <option name="METHOD_NAME" value="canRegisterUser" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRegTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mantis_test.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.mantis.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.mantis.tests.UserRegTests" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -321,19 +324,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.CreateUserTest.canCreateContact" />
       <item itemvalue="JUnit.LoginTests.CanLogin" />
       <item itemvalue="JUnit.LoginTests.canRegisterUser" />
-      <item itemvalue="JUnit.UserRegTests" />
       <item itemvalue="JUnit.UserRegTests.canRegisterUser" />
       <item itemvalue="JUnit.UserRegTests.canRegisterUserWithJamesApi" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateUserTest.canCreateContact" />
         <item itemvalue="JUnit.UserRegTests.canRegisterUser" />
         <item itemvalue="JUnit.UserRegTests.canRegisterUserWithJamesApi" />
         <item itemvalue="JUnit.LoginTests.canRegisterUser" />
         <item itemvalue="JUnit.LoginTests.CanLogin" />
-        <item itemvalue="JUnit.UserRegTests" />
       </list>
     </recent_temporary>
   </component>

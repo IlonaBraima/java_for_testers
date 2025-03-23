@@ -1,7 +1,12 @@
 package ru.stga.addressbook.manager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 
 
@@ -22,13 +27,22 @@ public class ApplicationManager {
     private Properties properties;
 
 
-    public void init(String browser, Properties properties) {
+    public void init(String browser, Properties properties) throws MalformedURLException {
         this.properties = properties;
         if (driver == null) {
-            if ("chrome".equals(browser)){
-                driver = new ChromeDriver();
-            } else if ("firefox".equals(browser)) {
+            var seleniumServer = properties.getProperty("seleniumServer");
+            if ("chrome".equals(browser)) {
+                if (seleniumServer != null) {
+                    driver = new RemoteWebDriver(new URL(seleniumServer), new ChromeOptions());
+                } else {
                     driver = new ChromeDriver();
+                }
+            } else if ("firefox".equals(browser)) {
+                if (seleniumServer != null) {
+                    driver = new RemoteWebDriver(new URL(seleniumServer), new FirefoxOptions());
+                } else {
+                    driver = new ChromeDriver();
+                }
             } else {
                 throw new IllegalArgumentException(String.format("Unknown browser %s", browser));
             }
