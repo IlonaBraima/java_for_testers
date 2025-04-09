@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/model/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/model/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/AddUserToGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/AddUserToGroupTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/JamesApiHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/JamesApiHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/IssueCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/IssueCreationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/UserRegTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/UserRegTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,11 +62,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="GradleRunConfiguration" name="IssueCreationTests" />
-    </enabled-run-configurations>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -248,7 +242,7 @@
       <recent name="ru.stqa.mantis.manager" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddUserToGroupTest.canAddUserToGroup">
+  <component name="RunManager" selected="JUnit.UserRegTests.canRegisterUserWithJamesApi">
     <configuration name="AddUserToGroupTest.canAddUserInGroup2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="addressbook_web_tests.test" />
       <extension name="coverage">
@@ -338,9 +332,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddUserToGroupTest.canAddUserToGroup" />
-        <item itemvalue="JUnit.AddUserToGroupTest.canAddUserInGroup2" />
         <item itemvalue="JUnit.UserRegTests.canRegisterUserWithJamesApi" />
+        <item itemvalue="JUnit.AddUserToGroupTest.canAddUserInGroup2" />
+        <item itemvalue="JUnit.AddUserToGroupTest.canAddUserToGroup" />
         <item itemvalue="JUnit.CreateUserTest.canCreateContact" />
         <item itemvalue="JUnit.UserRegTests.canRegisterUser" />
       </list>
@@ -389,11 +383,6 @@
           <url>file://$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/HelperBase.java</url>
           <line>14</line>
           <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/UserRegTests.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="41" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />

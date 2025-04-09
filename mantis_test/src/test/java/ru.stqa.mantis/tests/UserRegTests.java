@@ -87,33 +87,23 @@ public class UserRegTests extends TestBase {
         var email = String.format("%s@localhost", username);
         var password = "password";
 
-        //    Тест регистрирует новый адрес на почтовом сервере James, используя REST API.
-        DeveloperMailUser user = app.jamesCli().addUser(email, password);
-        if (user == null) {
-            throw new RuntimeException("User is null after CLI addUser() call!");
-        }
-
-        // 3. Очищаем ящик перед проверкой (добавляем drain)
-        app.mail().drain(email, password);
+        app.jamesApi().addUser(email, password);
 
         app.session().signUpForNewAccount(username, email);
-        if (user != null) {
-            System.out.println(user.name());
-        } else {
-            throw new RuntimeException("User is null");
-        }
-        System.out.println("API response text: " + text);
 
         var messages = app.mail().receive(email, password, Duration.ofSeconds(60));
+        Assertions.assertFalse(messages.isEmpty(), "No confirmation email received for: " + email);
+
         var url = MailHelper.extractUrlFromMessage(messages.get(0).content());
-        Assertions.assertNotNull(url);
+        Assertions.assertNotNull(url, "Activation URL not found in email!");
 
         app.session().goToUrl(url);
         app.session().updateUser(username, password);
 
         app.http().login(username, password);
-        Assertions.assertTrue(app.http().isLoggedIn());
+        Assertions.assertTrue(app.http().isLoggedIn(), "Login failed after registration!");
     }
+}
 //
 //    @Test
 //    public void canRegisterUserWithDeveloperMail() {
@@ -126,4 +116,3 @@ public class UserRegTests extends TestBase {
 //    void deleteMailUser() {
 //        app.developerMail().deleteUser(user);
 //    }
-}

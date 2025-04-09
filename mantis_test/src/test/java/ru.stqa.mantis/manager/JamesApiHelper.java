@@ -1,7 +1,6 @@
 package ru.stqa.mantis.manager;
 
 import okhttp3.*;
-import ru.stqa.mantis.model.DeveloperMailUser;
 
 import java.io.IOException;
 import java.net.CookieManager;
@@ -19,7 +18,7 @@ public class JamesApiHelper extends HelperBase {
         client = new OkHttpClient.Builder().cookieJar(new JavaNetCookieJar(new CookieManager())).build();
     }
 
-    public DeveloperMailUser addUser(String email, String password) {
+    public void addUser(String email, String password) {
         RequestBody body = RequestBody.create(String.format("{\"password\":\"%s\"}", password), JSON);
         Request request = new Request.Builder()
                 .url(String.format("%s/users/%s", manager.property("james.apiBaseUrl"), email))
@@ -30,6 +29,5 @@ public class JamesApiHelper extends HelperBase {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        return null;
     }
 }
