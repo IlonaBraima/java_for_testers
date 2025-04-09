@@ -92,4 +92,16 @@ public record UserData(
         return new UserData(this.id, this.firstname, this.middlename, this.lastname, this.nickname, this.title, this.email, this.photo, this.home, this.mobile, this.work, this.fax, this.email2, this.email3, this.address, phone2, company);
     }
 
+    public String getFirstName() {
+        return this.firstname;
+    }
+
+    public String getLastName() {
+        return this.lastname;
+    }
+
+    public String getId() {
+        return this.id;
+    }
+
 }

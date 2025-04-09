@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="" />
+    <list default="true" id="3299b6e8-2197-4969-b024-de82208e1a61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/model/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/model/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/AddUserToGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/tests/AddUserToGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/JamesApiHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/manager/JamesApiHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/UserRegTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/UserRegTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,6 +169,8 @@
     "Gradle.sandbox [:ru.stga.geometry.Geometry.main()].executor": "Run",
     "Gradle.squareTest.canCalculateArea.executor": "Run",
     "Gradle.squareTest.canCalculatePerimeter.executor": "Run",
+    "JUnit.AddUserToGroupTest.canAddUserInGroup2.executor": "Run",
+    "JUnit.AddUserToGroupTest.canAddUserToGroup.executor": "Run",
     "JUnit.CollectionTests.arrayTests.executor": "Run",
     "JUnit.CollectionTests.executor": "Run",
     "JUnit.CollectionTests.listTest.executor": "Run",
@@ -231,6 +239,7 @@
       <recent name="Rectangle" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests\src\test\resources\images" />
       <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests" />
       <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests\src" />
       <recent name="C:\Users\anoli\java_for_testers\addressbook_web_tests\src\test\java\ru\stga\addressbook\tests" />
@@ -239,7 +248,39 @@
       <recent name="ru.stqa.mantis.manager" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateUserTest.canCreateContact">
+  <component name="RunManager" selected="JUnit.AddUserToGroupTest.canAddUserToGroup">
+    <configuration name="AddUserToGroupTest.canAddUserInGroup2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="addressbook_web_tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stga.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stga.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stga.addressbook.tests.AddUserToGroupTest" />
+      <option name="METHOD_NAME" value="canAddUserInGroup2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddUserToGroupTest.canAddUserToGroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="addressbook_web_tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stga.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stga.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stga.addressbook.tests.AddUserToGroupTest" />
+      <option name="METHOD_NAME" value="canAddUserToGroup" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateUserTest.canCreateContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="addressbook_web_tests.test" />
       <extension name="coverage">
@@ -251,38 +292,6 @@
       <option name="PACKAGE_NAME" value="ru.stga.addressbook.tests" />
       <option name="MAIN_CLASS_NAME" value="ru.stga.addressbook.tests.CreateUserTest" />
       <option name="METHOD_NAME" value="canCreateContact" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests.CanLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mantis_test.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.mantis.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.mantis.tests.LoginTests" />
-      <option name="METHOD_NAME" value="CanLogin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests.canRegisterUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mantis_test.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.mantis.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.mantis.tests.LoginTests" />
-      <option name="METHOD_NAME" value="canRegisterUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -321,19 +330,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.AddUserToGroupTest.canAddUserInGroup2" />
+      <item itemvalue="JUnit.AddUserToGroupTest.canAddUserToGroup" />
       <item itemvalue="JUnit.CreateUserTest.canCreateContact" />
-      <item itemvalue="JUnit.LoginTests.CanLogin" />
-      <item itemvalue="JUnit.LoginTests.canRegisterUser" />
       <item itemvalue="JUnit.UserRegTests.canRegisterUser" />
       <item itemvalue="JUnit.UserRegTests.canRegisterUserWithJamesApi" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddUserToGroupTest.canAddUserToGroup" />
+        <item itemvalue="JUnit.AddUserToGroupTest.canAddUserInGroup2" />
+        <item itemvalue="JUnit.UserRegTests.canRegisterUserWithJamesApi" />
         <item itemvalue="JUnit.CreateUserTest.canCreateContact" />
         <item itemvalue="JUnit.UserRegTests.canRegisterUser" />
-        <item itemvalue="JUnit.UserRegTests.canRegisterUserWithJamesApi" />
-        <item itemvalue="JUnit.LoginTests.canRegisterUser" />
-        <item itemvalue="JUnit.LoginTests.CanLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -380,6 +389,11 @@
           <url>file://$PROJECT_DIR$/addressbook_web_tests/src/test/java/ru/stga/addressbook/manager/HelperBase.java</url>
           <line>14</line>
           <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mantis_test/src/test/java/ru.stqa.mantis/tests/UserRegTests.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
